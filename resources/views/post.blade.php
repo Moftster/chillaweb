@@ -1,0 +1,5 @@
+@include('partials/header')
+
+<h1>Post</h1>
+
+@include('partials/footer')

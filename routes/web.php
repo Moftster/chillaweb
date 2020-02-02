@@ -23,14 +23,23 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
-Route::get('/projects', function () {
-    return view('projects');
-});
+// Route::get('/projects', function () {
+//     return view('projects');
+// });
+
+Route::view('projects', 'projects');
 
 Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/contact', function () {
+Route::get('/contact', function() {
     return view('contact');
 });
+
+Route::get('/post', function() {
+    return view('post');
+});
+
+Route::view('adminlogin', 'login');
+
