@@ -41,5 +41,8 @@ Route::get('/post', function() {
     return view('post');
 });
 
+Route::view('/post', 'post');
+Route::post('/blogpostcontroller', 'BlogPostController@postSubmit');
+
 Route::view('adminlogin', 'login');
 
