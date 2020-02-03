@@ -45,4 +45,6 @@ Route::view('/post', 'post');
 Route::post('/blogpostcontroller', 'BlogPostController@postSubmit');
 
 Route::view('adminlogin', 'login');
+Route::post('/userlogin', 'UserLoginController@userLogin');
+
 
