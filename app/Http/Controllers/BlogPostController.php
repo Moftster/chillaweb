@@ -8,6 +8,13 @@ class BlogPostController extends Controller
 {
     public function postSubmit(Request $req)
     {
-        print_r($req->input('post-body'));
+        $req->validate([
+            'title' => 'required | title',
+            'body' => 'required | body',
+            'image' => 'required | image'
+        ]);
+
+        // print_r($req->input());
     }
+    
 }
