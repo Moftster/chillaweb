@@ -8,8 +8,10 @@ class UserLoginController extends Controller
 {
     public function userLogin(Request $req) {
         $req->validate([
-            'email' => 'required | email',
-            'username' => 'required | username'
+            'username' => 'required | username',
+            'email' => 'required | email'
         ]);
+
+        // print_r($req->input());
     }
 }

@@ -43,6 +43,8 @@ Route::get('/post', function() {
 
 Route::view('/post', 'post');
 Route::post('/blogpostcontroller', 'BlogPostController@postSubmit');
+Route::get('db', 'BlogPostController@checkDB');
+
 
 Route::view('adminlogin', 'login');
 Route::post('/userlogin', 'UserLoginController@userLogin');
