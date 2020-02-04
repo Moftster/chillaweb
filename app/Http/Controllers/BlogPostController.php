@@ -22,9 +22,17 @@ class BlogPostController extends Controller
 
     public function checkDB()
     {
-        $user = DB::select('SELECT * FROM blog');
-        print_r($user);
-        echo "Checking Database";
+        // $user = DB::select('SELECT * FROM blog');
+        // print_r($user);
+        // return $user;
+        // echo "Checking Database";
+
+        $user = DB::table('blog')
+        ->insert([
+            'title' => 'Via Browser',
+            'body' => 'Entering code',
+            'image' => 'test image'
+        ]);
     }
 
 
