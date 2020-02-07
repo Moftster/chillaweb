@@ -1,6 +1,18 @@
-@include('partials/header')
+@extends('layout')
 
-<h2>Contact page</h2>
+@section('title', 'Contact page')
 
-@include('partials/footer')
+@section('header')
+    @parent
+@endsection
 
+@section('content')
+
+<h1>This is the contact page</h1>
+
+@endsection
+
+
+@section('footer')
+    @parent
+@endsection

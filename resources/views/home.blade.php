@@ -1,6 +1,18 @@
-@include('partials/header')
+@extends('layout')
 
-<h2>This is the home page</h2>
+@section('title', 'Home')
 
-@include('partials/footer')
+@section('header')
+    @parent
+@endsection
 
+@section('content')
+
+<h1>This is the home page</h1>
+
+@endsection
+
+
+@section('footer')
+    @parent
+@endsection

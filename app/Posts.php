@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Blogs extends Model
+class Posts extends Model
 {
     public function index()
     {
-
+        
     }
 }

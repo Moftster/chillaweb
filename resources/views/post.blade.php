@@ -1,6 +1,12 @@
-@include('partials/header')
+@extends('layout')
 
-<h1>Post</h1>
+@section('title', 'Home page')
+
+@section('header')
+    @parent
+@endsection
+
+@section('content')
 
 {{-- @foreach($errors->all() as $e)
 <p>{{$e}}</p>
@@ -26,4 +32,9 @@
     <button type="submit">Submit</button>
 </form>
 
-@include('partials/footer')
+@endsection
+
+
+@section('footer')
+    @parent
+@endsection

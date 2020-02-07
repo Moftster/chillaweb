@@ -4,10 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Blogs extends Model
+class newTest extends Model
 {
-    public function index()
-    {
-
-    }
+    //
 }
