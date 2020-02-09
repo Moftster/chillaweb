@@ -12,6 +12,8 @@
 <div>
 
         @foreach($data as $post)
+
+<img src="/uploads/{{ $post->postimage }}" alt="">
         
             <h1>{{ $post->postname }}</h1>
 

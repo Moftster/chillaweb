@@ -21,6 +21,33 @@ class BlogPostController extends Controller
         // ]);
 
         // print_r($req->input());
+
+        $post = new Posts;
+        $post->postname = $req->title;
+        $post->postcontent = $req->body;
+        // $post->postimage = $req->image;
+        $post->posterid = "David Moftakhar";
+
+        // Save image to storage
+
+        // $req->file('image')->store('uploads');
+
+        // if($req->hasfile('image')) {
+            $file = $req->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads', $filename);
+            $post->postimage = $filename;
+            // print_r($filename);
+        // } else {
+        //     $post->postimage = "No image";
+
+        // }
+
+        $post->save();
+
+        return redirect('/blog');
+
     }
 
     public function checkDB()
@@ -41,20 +68,23 @@ class BlogPostController extends Controller
         ]);
     }
 
-    public function uploadImage(Request $req)
+    public function uploadPost(Request $req)
     {
-        $user = DB::table('posts')
-        ->insert([
-            'postname' => 'New Via Browser',
-            'postcontent' => 'New Entering code',
-            'postimage' => 'test image',
-            'posterid' => 'test image'
+        // $user = DB::table('posts')
+        // ->insert([
+        //     'postname' => 'New Via Browser',
+        //     'postcontent' => 'New Entering code',
+        //     'postimage' => 'test image',
+        //     'posterid' => 'test image'
 
-        ]);
+        // ]);
 
-        // print_r($req->file());
+        // // print_r($req->file());
 
-        echo $req->file('image')->store('public');
+        // echo $req->file('image')->store('public');
+        // return "testing controller";
+
+        print_r($req->input());
     }
 
 
