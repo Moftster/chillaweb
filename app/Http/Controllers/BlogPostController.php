@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+// Import Posts model
+use App\Posts;
+
 class BlogPostController extends Controller
 {
     public function postSubmit(Request $req)
@@ -22,8 +25,8 @@ class BlogPostController extends Controller
 
     public function checkDB()
     {
-        $user = DB::select('SELECT * FROM blog');
-        print_r($user);
+        $user = DB::select('SELECT * FROM posts');
+        // print_r($user);
         return $user;
         echo "Checking Database";
     }
@@ -54,5 +57,20 @@ class BlogPostController extends Controller
         echo $req->file('image')->store('public');
     }
 
+
+    function index()
+    {
+        // return "New connection established";
+        return Posts::all();
+    }
+
+    function viewPosts()
+    {
+        // return Posts::all();
+        //    return view('blog');
+        $data = Posts::all();
+        return view('blog', ['data' => $data]);
+
+    }
     
 }
