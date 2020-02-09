@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Home page')
+@section('title', 'Post page')
 
 @section('header')
     @parent
@@ -12,7 +12,7 @@
 <p>{{$e}}</p>
 @endforeach --}}
 
-<form action="blogpostcontroller" method="POST">
+<form enctype="multipart/form-data" action="upload" method="POST" name="postForm">
     @csrf
     <input type="text" name="title" placeholder="Post title"> 
     @error('title')   
@@ -24,7 +24,7 @@
     <div>{{$message}}</div>
     @enderror
     <br><br>
-    <input type="file" class="form-control" name="image" placeholder="Image">
+    <input type="file" name="image" placeholder="Image">
     @error('image')   
     <div>{{$message}}</div>
     @enderror

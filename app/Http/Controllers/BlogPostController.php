@@ -30,12 +30,28 @@ class BlogPostController extends Controller
 
     public function addPost()
     {
-        $user = DB::table('blog')
+        $user = DB::table('posts')
         ->insert([
             'title' => 'New Via Browser',
             'body' => 'New Entering code',
             'image' => 'test image'
         ]);
+    }
+
+    public function uploadImage(Request $req)
+    {
+        $user = DB::table('posts')
+        ->insert([
+            'postname' => 'New Via Browser',
+            'postcontent' => 'New Entering code',
+            'postimage' => 'test image',
+            'posterid' => 'test image'
+
+        ]);
+
+        // print_r($req->file());
+
+        echo $req->file('image')->store('public');
     }
 
     

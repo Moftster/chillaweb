@@ -47,6 +47,10 @@ Route::get('dbcheck', 'BlogPostController@checkDB');
 Route::get('dbpost', 'BlogPostController@addPost');
 Route::get('modeltest', 'Post@index');
 
+//uploading file
+Route::view('imageform', 'post');
+Route::post('upload', 'BlogPostController@uploadImage');
+
 
 
 Route::view('adminlogin', 'login');
