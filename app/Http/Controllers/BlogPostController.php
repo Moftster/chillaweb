@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,37 +11,23 @@ class BlogPostController extends Controller
 {
     public function postSubmit(Request $req)
     {
-        // echo "Connection to DB working";
-
-        // $req->validate([
-        //     'title' => 'required | max:60',
-        //     'body' => 'required | body',
-        //     'image' => 'required | image'
-        // ]);
-
-        // print_r($req->input());
+        $req->validate([
+            'title' => 'required | max:100',
+            'body' => 'required',
+            'image' => 'required'
+        ]);
 
         $post = new Posts;
         $post->postname = $req->title;
         $post->postcontent = $req->body;
-        // $post->postimage = $req->image;
         $post->posterid = "David Moftakhar";
 
-        // Save image to storage
-
-        // $req->file('image')->store('uploads');
-
-        // if($req->hasfile('image')) {
-            $file = $req->file('image');
-            $extension = $file->getClientOriginalExtension();
-            $filename = time() . '.' . $extension;
-            $file->move('uploads', $filename);
-            $post->postimage = $filename;
-            // print_r($filename);
-        // } else {
-        //     $post->postimage = "No image";
-
-        // }
+        // Saving filename to DB and uploading file
+        $file = $req->file('image');
+        $extension = $file->getClientOriginalExtension();
+        $filename = time() . '.' . $extension;
+        $file->move('uploads', $filename);
+        $post->postimage = $filename;
 
         $post->save();
 
@@ -58,15 +43,6 @@ class BlogPostController extends Controller
         echo "Checking Database";
     }
 
-    public function addPost()
-    {
-        $user = DB::table('posts')
-        ->insert([
-            'title' => 'New Via Browser',
-            'body' => 'New Entering code',
-            'image' => 'test image'
-        ]);
-    }
 
     public function uploadPost(Request $req)
     {

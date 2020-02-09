@@ -19,13 +19,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-// Route::get('/blog', function () {
-//     return view('blog');
-// });
-
-// Route::get('/projects', function () {
-//     return view('projects');
-// });
 
 Route::view('projects', 'projects');
 
@@ -37,30 +30,15 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
-// Route::get('/post', function() {
-//     return view('post');
-// });
 
 // Post blog to database
 Route::view('post', 'post');
 Route::post('upload', 'BlogPostController@postSubmit');
 
-
-Route::post('/blogpostcontroller', 'BlogPostController@postSubmit');
-Route::get('dbcheck', 'BlogPostController@checkDB');
-Route::get('dbpost', 'BlogPostController@addPost');
-Route::get('modeltest', 'Post@index'); 
-
-//uploading file
-// Route::view('imageform', 'post');
-// Route::post('upload', 'BlogPostController@uploadPost');
-
-// Eloquent practice
-Route::get('/eloquent', 'BlogPostController@index');
-
 // View blog posts
 Route::get('blog', 'BlogPostController@viewPosts');
 
+// User login
 Route::view('adminlogin', 'login');
 Route::post('/userlogin', 'UserLoginController@userLogin');
 

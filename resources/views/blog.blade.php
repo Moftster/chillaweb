@@ -13,14 +13,13 @@
 
         @foreach($data as $post)
 
-<img src="/uploads/{{ $post->postimage }}" alt="">
+            <img src="/uploads/{{ $post->postimage }}" alt="">
         
             <h1>{{ $post->postname }}</h1>
 
             <p>{{ $post->postcontent }}</p>
 
         @endforeach
-    </ul>
 
 </div>
 
