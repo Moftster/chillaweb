@@ -75,6 +75,11 @@ class BlogPostController extends Controller
         // return Posts::all();
         //    return view('blog');
         $data = Posts::all();
+
+        $data = Posts::
+        orderBy('created_at', 'desc')
+        ->get();
+
         return view('blog', ['data' => $data]);
 
     }
