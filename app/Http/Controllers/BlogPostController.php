@@ -132,7 +132,7 @@ class BlogPostController extends Controller
     {
         Posts::where('id', $post_id)
         ->delete();
-        return redirect('/blog');
+        return redirect('/myposts');
     }
     
 }
