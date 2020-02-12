@@ -35,7 +35,7 @@ Route::get('/contact', function() {
 Route::view('post', 'post');
 Route::post('upload', 'BlogPostController@postSubmit');
 
-// View user's blog posts
+// View user's blog posts (blog section)
 Route::get('blog', 'BlogPostController@viewPosts');
 
 // View individual blog post
@@ -45,8 +45,11 @@ Route::get('/view/{id}', 'BlogPostController@viewSinglePost');
 Route::get('/edit/{id}', 'BlogPostController@viewPostToEdit');
 Route::post('/update/{id}', 'BlogPostController@editPost');
 
-// View My posts
+// View My posts (user)
 Route::get('myposts', 'BlogPostController@viewMyPosts');
+
+// Delete post
+Route::get('/delete/{id}', 'BlogPostController@deletePost');
 
 // User login
 Route::view('adminlogin', 'login');

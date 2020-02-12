@@ -127,5 +127,12 @@ class BlogPostController extends Controller
 
         return redirect('/blog');
     }
+
+    public function deletePost($post_id)
+    {
+        Posts::where('id', $post_id)
+        ->delete();
+        return redirect('/blog');
+    }
     
 }

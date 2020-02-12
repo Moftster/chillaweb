@@ -23,7 +23,7 @@
 
             <a href='{{url("/edit/{$post->id}")}}' class="btn btn-default">Edit</a>     
 
-            <a href='{{url("/view/{$post->id}")}}' class="btn btn-default">Delete</a>     
+            <a href='{{url("/delete/{$post->id}")}}' class="btn btn-default">Delete</a>     
 
         @endforeach
 
