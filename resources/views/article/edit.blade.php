@@ -12,6 +12,8 @@
 <p>{{$e}}</p>
 @endforeach --}}
 
+<h1>Edit post</h1>
+
 @foreach($data as $post)
 
 <form enctype="multipart/form-data" action="{{url('/update', array($post->id)) }}" method="POST" name="postForm">

@@ -91,7 +91,6 @@ class BlogPostController extends Controller
         $req->validate([
             'title' => 'required | max:100',
             'body' => 'required',
-            'image' => 'required'
         ]);
 
         $post = new Posts;
@@ -101,16 +100,25 @@ class BlogPostController extends Controller
 
         // Saving filename to DB and uploading file
         $file = $req->file('image');
-        $extension = $file->getClientOriginalExtension();
-        $filename = time() . '.' . $extension;
-        $file->move('uploads', $filename);
-        $post->postimage = $filename;
 
-        $data = array(
-            'postname' => $post->postname,
-            'postcontent' => $post->postcontent,
-            'postimage' => $post->postimage
-        );
+        if($file) {
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads', $filename);
+            $post->postimage = $filename;
+
+            $data = array(
+                'postname' => $post->postname,
+                'postcontent' => $post->postcontent,
+                'postimage' => $post->postimage
+            );
+        } else {
+            $data = array(
+                'postname' => $post->postname,
+                'postcontent' => $post->postcontent
+            );
+        }
+
 
         Posts::where('id', $post_id)
         ->update($data);
