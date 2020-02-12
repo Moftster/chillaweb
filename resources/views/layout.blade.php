@@ -17,6 +17,8 @@
 <a href="contact">Contact</a>
 <a href="blog">Blog</a>
 <a href="post">Post</a>
+<a href="myposts">My Posts</a>
+
 @show
 
 <div class="container">

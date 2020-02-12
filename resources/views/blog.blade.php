@@ -13,13 +13,19 @@
 
         @foreach($data as $post)
 
-            <img src="/uploads/{{ $post->postimage }}" alt="">
+            <img style="max-height: 200px;" src="/uploads/{{ $post->postimage }}" alt="">
         
             <h1>{{ $post->postname }}</h1>
 
-            <p>{{ $post->postcontent }}</p>
+            <p>{{ $post->created_at->format('d M Y') }}</p>
 
-        @endforeach
+            <p>{{ substr($post->postcontent, 0, 150) }}...</p>
+
+            <a href='{{url("/view/{$post->id}")}}' class="btn btn-default">Read post</a>     
+
+            <br>
+
+            @endforeach
 
 </div>
 

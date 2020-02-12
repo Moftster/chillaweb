@@ -35,8 +35,17 @@ Route::get('/contact', function() {
 Route::view('post', 'post');
 Route::post('upload', 'BlogPostController@postSubmit');
 
-// View blog posts
+// View user's blog posts
 Route::get('blog', 'BlogPostController@viewPosts');
+
+// View individual blog post
+Route::get('/view/{id}', 'BlogPostController@viewSinglePost');
+
+// View My posts
+Route::get('myposts', 'BlogPostController@viewMyPosts');
+
+// Edit my post
+Route::post('update', 'BlogPostController@editPost');
 
 // User login
 Route::view('adminlogin', 'login');

@@ -83,5 +83,30 @@ class BlogPostController extends Controller
         return view('blog', ['data' => $data]);
 
     }
+
+    function viewMyPosts()
+    {
+        // return Posts::all();
+        //    return view('blog');
+        $data = Posts::all();
+
+        $data = Posts::
+        orderBy('created_at', 'desc')
+        ->get();
+
+        return view('myposts', ['data' => $data]);
+
+    }
+
+    public function viewSinglePost($post_id)
+    {
+        $data = Posts::where('id', '=', $post_id)->get();
+        return view('article.view', ['data'=>$data]);
+    }
+
+    public function editPost($id)
+    {
+        $post = Posts::find($id);
+    }
     
 }
