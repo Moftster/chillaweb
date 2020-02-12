@@ -18,12 +18,12 @@
             <h1>{{ $post->postname }}</h1>
 
             {{-- <p>{{ $post->postcontent }}</p> --}}
-           
-            <a href="posts/{{ $post->id }}/view" class="btn btn-default">View</a>     
-            
-            <a href="posts/{{ $post->id }}/edit" class="btn btn-default">Edit</a>     
-            
-            <a href="posts/{{ $post->id }}/delete" class="btn btn-warning">Delete</a>   
+
+            <a href='{{url("/view/{$post->id}")}}' class="btn btn-default">View</a>     
+
+            <a href='{{url("/edit/{$post->id}")}}' class="btn btn-default">Edit</a>     
+
+            <a href='{{url("/view/{$post->id}")}}' class="btn btn-default">Delete</a>     
 
         @endforeach
 

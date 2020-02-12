@@ -41,11 +41,12 @@ Route::get('blog', 'BlogPostController@viewPosts');
 // View individual blog post
 Route::get('/view/{id}', 'BlogPostController@viewSinglePost');
 
+// Edit individual blog post
+Route::get('/edit/{id}', 'BlogPostController@viewPostToEdit');
+Route::post('/update/{id}', 'BlogPostController@editPost');
+
 // View My posts
 Route::get('myposts', 'BlogPostController@viewMyPosts');
-
-// Edit my post
-Route::post('update', 'BlogPostController@editPost');
 
 // User login
 Route::view('adminlogin', 'login');

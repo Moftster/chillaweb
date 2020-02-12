@@ -44,36 +44,13 @@ class BlogPostController extends Controller
     }
 
 
-    public function uploadPost(Request $req)
-    {
-        // $user = DB::table('posts')
-        // ->insert([
-        //     'postname' => 'New Via Browser',
-        //     'postcontent' => 'New Entering code',
-        //     'postimage' => 'test image',
-        //     'posterid' => 'test image'
-
-        // ]);
-
-        // // print_r($req->file());
-
-        // echo $req->file('image')->store('public');
-        // return "testing controller";
-
-        print_r($req->input());
-    }
-
-
     function index()
     {
-        // return "New connection established";
         return Posts::all();
     }
 
     function viewPosts()
     {
-        // return Posts::all();
-        //    return view('blog');
         $data = Posts::all();
 
         $data = Posts::
@@ -86,8 +63,6 @@ class BlogPostController extends Controller
 
     function viewMyPosts()
     {
-        // return Posts::all();
-        //    return view('blog');
         $data = Posts::all();
 
         $data = Posts::
@@ -104,9 +79,45 @@ class BlogPostController extends Controller
         return view('article.view', ['data'=>$data]);
     }
 
-    public function editPost($id)
+    public function viewPostToEdit($post_id)
     {
-        $post = Posts::find($id);
+        $data = Posts::where('id', '=', $post_id)->get();
+        return view('article.edit', ['data'=>$data]);
+      
+    } 
+
+    public function editPost(Request $req, $post_id)
+    {
+        $req->validate([
+            'title' => 'required | max:100',
+            'body' => 'required',
+            'image' => 'required'
+        ]);
+
+        $post = new Posts;
+        $post->postname = $req->title;
+        $post->postcontent = $req->body;
+        $post->posterid = "David Moftakhar";
+
+        // Saving filename to DB and uploading file
+        $file = $req->file('image');
+        $extension = $file->getClientOriginalExtension();
+        $filename = time() . '.' . $extension;
+        $file->move('uploads', $filename);
+        $post->postimage = $filename;
+
+        $data = array(
+            'postname' => $post->postname,
+            'postcontent' => $post->postcontent,
+            'postimage' => $post->postimage
+        );
+
+        Posts::where('id', $post_id)
+        ->update($data);
+
+        $post->update();
+
+        return redirect('/blog');
     }
     
 }
