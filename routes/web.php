@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('homepage');
 });
 
 Route::get('/about', function () {
@@ -56,3 +56,7 @@ Route::view('adminlogin', 'login');
 Route::post('/userlogin', 'UserLoginController@userLogin');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
