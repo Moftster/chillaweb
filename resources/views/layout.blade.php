@@ -18,6 +18,8 @@
 <a href="/blog">Blog</a>
 <a href="/post">Post</a>
 <a href="/myposts">My Posts</a>
+<a href="/login">Login</a>
+
 
 @show
 
