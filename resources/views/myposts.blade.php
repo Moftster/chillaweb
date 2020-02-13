@@ -12,18 +12,14 @@
 <div>
 
         @foreach($data as $post)
-
-            {{-- <img src="/uploads/{{ $post->postimage }}" alt=""> --}}
-        
+       
             <h1>{{ $post->postname }}</h1>
 
-            {{-- <p>{{ $post->postcontent }}</p> --}}
+            <a href='{{url("/view/{$post->id}")}}' class="btn btn-primary">View</a>     
 
-            <a href='{{url("/view/{$post->id}")}}' class="btn btn-default">View</a>     
+            <a href='{{url("/edit/{$post->id}")}}' class="btn btn-warning">Edit</a>     
 
-            <a href='{{url("/edit/{$post->id}")}}' class="btn btn-default">Edit</a>     
-
-            <a href='{{url("/delete/{$post->id}")}}' class="btn btn-default">Delete</a>     
+            <a href='{{url("/delete/{$post->id}")}}' class="btn btn-danger">Delete</a>     
 
         @endforeach
 

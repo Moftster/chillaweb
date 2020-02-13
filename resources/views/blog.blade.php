@@ -21,7 +21,7 @@
 
             <p>{{ substr($post->postcontent, 0, 150) }}...</p>
 
-            <a href='{{url("/view/{$post->id}")}}' class="btn btn-default">Read post</a>     
+            <a href='{{url("/view/{$post->id}")}}' class="btn btn-success">Read post</a>     
 
             <br>
 

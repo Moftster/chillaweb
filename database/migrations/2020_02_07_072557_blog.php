@@ -14,9 +14,9 @@ class Blog extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('postid');
+            $table->bigIncrements('id');
             $table->string('postname');
-            $table->string('postcontent');
+            $table->string('postcontent', 7000);
             $table->string('postimage');
             $table->string('posterid');
             $table->timestamps();
