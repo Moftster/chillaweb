@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Contact page')
+@section('title', 'Contact')
 
 @section('header')
     @parent
