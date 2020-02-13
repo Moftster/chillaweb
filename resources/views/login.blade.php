@@ -1,10 +1,14 @@
-@include('partials/header')
+@extends('layout')
+
+@section('title', 'Home')
+
+@section('header')
+    @parent
+@endsection
+
+@section('content')
 
 <h1>Login</h1>
-
-{{-- @foreach($errors->all() as $e)
-<p>{{$e}}</p>
-@endforeach --}}
 
 <form action="userlogin" method="POST">
     @csrf
@@ -21,4 +25,9 @@
     <button type="submit">Submit</button>
 </form>
 
-@include('partials/footer')
+@endsection
+
+@section('footer')
+    @parent
+@endsection
+
