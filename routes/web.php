@@ -51,12 +51,7 @@ Route::get('myposts', 'BlogPostController@viewMyPosts');
 // Delete post
 Route::get('/delete/{id}', 'BlogPostController@deletePost');
 
-// User login
-Route::view('adminlogin', 'login');
-Route::post('/userlogin', 'UserLoginController@userLogin');
-
-
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/adminuserlogin', 'HomeController@index')->name('home');
