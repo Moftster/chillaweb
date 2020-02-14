@@ -100,7 +100,7 @@ class BlogPostController extends Controller
         $post = new Posts;
         $post->postname = $req->title;
         $post->postcontent = $req->body;
-        $post->posterid = "David Moftakhar";
+        $post->posterid = Auth::user()->id;
 
         // Saving filename to DB and uploading file
         $file = $req->file('image');
