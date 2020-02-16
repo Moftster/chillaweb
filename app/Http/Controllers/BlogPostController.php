@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\DB;
 // Import Posts model
 use App\Posts;
 
+// Import App model
+use App\User;
+
 // User user authentication  
 use Auth;
 
@@ -24,7 +27,7 @@ class BlogPostController extends Controller
         $post = new Posts;
         $post->postname = $req->title;
         $post->postcontent = $req->body;
-        $post->posterid = Auth::user()->id;
+        $post->user_id = Auth::user()->id;
 
         // Saving filename to DB and uploading file
         $file = $req->file('image');
@@ -55,7 +58,6 @@ class BlogPostController extends Controller
 
     function viewPosts()
     {
-        $data = Posts::all();
 
         $data = Posts::
         orderBy('created_at', 'desc')
@@ -67,11 +69,13 @@ class BlogPostController extends Controller
 
     function viewMyPosts()
     {
-        $data = Posts::all();
+        $userID = Auth::user()->id;
 
-        $data = Posts::
-        orderBy('created_at', 'desc')
-        ->get();
+        $data = User::orderBy('created_at', 'desc')->find($userID)->myPosts; 
+
+        // $data = Posts::
+        // orderBy('created_at', 'desc')
+        // ->get();
 
         return view('myposts', ['data' => $data]);
 
@@ -100,7 +104,7 @@ class BlogPostController extends Controller
         $post = new Posts;
         $post->postname = $req->title;
         $post->postcontent = $req->body;
-        $post->posterid = Auth::user()->id;
+        $post->user_id = Auth::user()->id;
 
         // Saving filename to DB and uploading file
         $file = $req->file('image');

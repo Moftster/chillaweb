@@ -51,6 +51,9 @@ Route::get('myposts', 'BlogPostController@viewMyPosts');
 // Delete post
 Route::get('/delete/{id}', 'BlogPostController@deletePost');
 
+// Post user ID to DB when posting
+Route::get('/test', 'UserController@index');
+
 
 Auth::routes();
 

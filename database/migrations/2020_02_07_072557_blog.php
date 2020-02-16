@@ -18,7 +18,7 @@ class Blog extends Migration
             $table->string('postname');
             $table->string('postcontent', 7000);
             $table->string('postimage');
-            $table->string('posterid');
+            $table->string('user_id');
             $table->timestamps();
         });
     }

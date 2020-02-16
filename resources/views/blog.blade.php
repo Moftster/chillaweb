@@ -8,7 +8,7 @@
 
 @section('content')
 
-<h1>This is the blog page</h1>
+<h1>Blog</h1>
 <div>
 
         @foreach($data as $post)
