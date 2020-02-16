@@ -12,12 +12,13 @@ class emailRegistrationController extends Controller
     public function sendEmail()
     {
         // echo "Hellow email world";
-        $emailTo = "New Signer";
-        $emailAddress = "d_moftakhar@hotmail.com";
-        $data = array('name'=>'Mr Jones', 'body'=>'Test message');
-        Mail::send('mail', $data, function($message) use ($emailTo, $emailAddress){
+        $emailTo = "David Moftakhar";
+        $emailAddress = "david@chillaweb.com";
+        $data = array('name'=>'Mr Jones', 'email'=>'job@test.com');
+        Mail::send('email/confirmuser', $data, function($message) use ($emailTo, $emailAddress){
             $message->to($emailAddress)
-            ->subject('Lara mail subject');
+            ->subject('ChillaWeb user registration');
+        // echo "Email sent";
         });
     }
 }
