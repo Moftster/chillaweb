@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Admin panel')
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -11,15 +13,19 @@
                         @foreach($users as $user)
                             <li class="list-group-item">
                                 <strong>User ID: </strong>{{$user->id}}
-                                <a href="{{route('admin.users.edit', $user->id)}}"><button type="button" class="btn btn-warning float-right">Edit</button></a>
-                                <a href="{{route('admin.users.destroy', $user->id)}}"><button type="button" class="btn btn-danger float-right">Delete</button></a>
                                 <br>
                                 <strong>Name: </strong>{{$user->name}}
                                 <br>
                                 <strong>Email: </strong>{{$user->email}}
                                 <br>
                                 <strong>Roles: </strong>{{ implode(', ', $user->roles()->get()->pluck('name')->toArray())}}
-
+                                <br>
+                                <a href="{{route('admin.users.edit', $user->id)}}"><button type="button" class="btn btn-warning">Edit</button></a>
+                                <form action="{{route('admin.users.destroy', $user)}}" method="POST">
+                                    @csrf
+                                    {{method_field('DELETE')}}
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
                             </li>
 
                         @endforeach
