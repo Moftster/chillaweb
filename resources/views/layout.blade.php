@@ -81,8 +81,9 @@
                                     </a>
                                     <a href="/post" class="dropdown-item">Post</a>
                                     <a href="/myposts" class="dropdown-item">My Posts</a>
+                                    @can('manage-users')
                                     <a href="{{ route('admin.users.index') }}" class="dropdown-item">User management</a>
-
+                                    @endcan
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
