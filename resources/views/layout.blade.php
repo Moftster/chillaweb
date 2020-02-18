@@ -79,8 +79,10 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    @can('edit-users')
                                     <a href="/post" class="dropdown-item">Post</a>
                                     <a href="/myposts" class="dropdown-item">My Posts</a>
+                                    @endcan
                                     @can('manage-users')
                                     <a href="{{ route('admin.users.index') }}" class="dropdown-item">User management</a>
                                     @endcan
