@@ -17,6 +17,9 @@
                                 <strong>Name: </strong>{{$user->name}}
                                 <br>
                                 <strong>Email: </strong>{{$user->email}}
+                                <br>
+                                <strong>Roles: </strong>{{ implode(', ', $user->roles()->get()->pluck('name')->toArray())}}
+
                             </li>
 
                         @endforeach
