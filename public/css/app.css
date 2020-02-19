@@ -10884,6 +10884,12 @@ a.text-dark:focus {
   }
 }
 
+/* JUMBOTRON */
+
+.jumbotron{
+  margin: 1rem 1rem;
+}
+
 /* IMAGES */
 
 .fit-image{
