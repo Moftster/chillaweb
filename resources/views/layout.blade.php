@@ -103,6 +103,7 @@
 @show
 
 <div class="container">
+    @include('partials.alerts')
     @yield('content')
 </div>
 
