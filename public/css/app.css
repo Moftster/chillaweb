@@ -10884,6 +10884,16 @@ a.text-dark:focus {
   }
 }
 
+/* IMAGES */
+
+.fit-image{
+  width: 100%;
+  object-fit: cover;
+  height: 380px; 
+  }
+
+/* FOOTER */
+
 .footer {
   /* position: absolute; */
   bottom: 0;
