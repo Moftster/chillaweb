@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-6">
             <p class="lead">UK Website Design and Development</p>
-            <h4 class="display-4">Custom websites from £99</h4>
+            <h4 class="display-4">Custom websites from £299</h4>
             <hr class="my-4">
             <p class="lead">Quality design | Advanced development | UK studio</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Pricing</a>
@@ -43,7 +43,7 @@
         <p>You will have a single point of contact whose focus will be solely on delivering your project.</p>
         <hr class="my-4">
         <p class="h5"><strong>Affordable pricing</strong></p>
-        <p>Our packages are designed for individuals, startups and small busineses with prices from £99.</p>
+        <p>Our packages are designed for individuals, startups and small busineses with prices from £299.</p>
         <hr class="my-4">
     </div>
 </div>

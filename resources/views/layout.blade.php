@@ -114,18 +114,31 @@
     <div class="container">
 
         <div class="row d-flex justify-content-center">
-            <img class="social-icon" src="{{ asset('icons/insta.png') }}" alt="Instagram logo">
-            <img class="social-icon" src="{{ asset('icons/twitter.png') }}" alt="Twitter logo">
-            <img class="social-icon" src="{{ asset('icons/youtube.png') }}" alt="YouTube logo">
+            <a href="https://www.instagram.com/chillaweb/"><img class="social-icon" src="{{ asset('icons/insta.png') }}" alt="Instagram logo"></a>
+            <a href="https://twitter.com/ChillaWeb"><img class="social-icon" src="{{ asset('icons/twitter.png') }}" alt="Twitter logo"></a>
+            <a href="https://www.youtube.com/channel/UCYlZTdMURVPbf60rtldAX7g?view_as=subscriber"><img class="social-icon" src="{{ asset('icons/youtube.png') }}" alt="YouTube logo"></a>
         </div>
 
-        <div class="row d-flex justify-content-center">
-            <span class="text-muted">This is the footer
-        </div>
-      </span>
+        <nav class="navbar navbar-expand-md navbar- justify-content-center">
 
+            <div class="row">            
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="/services">Services</a>
+                    </li>                        
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="/portfolio">Portfolio</a>
+                    </li>                                         
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="/contact">Contact</a>
+                    </li>                        
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="/blog">Blog</a>
+                    </li>       
+                </ul>
+            </div>
 
-      {{-- <img src="{{ asset('img/server-woman.png') }}"> --}}
+        </nav>
 
     </div>
   </footer>
