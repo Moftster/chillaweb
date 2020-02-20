@@ -42,17 +42,19 @@
                             <a class="nav-link" href="/services">Services</a>
                         </li>                        
                         <li class="nav-item">
-                            <a class="nav-link" href="/projects">Projects</a>
-                        </li>                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>                        
+                            <a class="nav-link" href="/projects">Portfolio</a>
+                        </li>                                         
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact</a>
                         </li>                        
                         <li class="nav-item">
                             <a class="nav-link" href="/blog">Blog</a>
-                        </li>                        
+                        </li>        
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-success ">Get a free quote</a>
+                        </li>        
+                        
+                        
 
 
                         <!-- Authentication Links -->

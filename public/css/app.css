@@ -10884,10 +10884,19 @@ a.text-dark:focus {
   }
 }
 
+/* HOMEPAGE CARD SPACING */
+
+.card-home {
+  /* : 1rem; */
+}
+
+
+
 /* JUMBOTRON */
 
 .jumbotron{
-  margin: 1rem 1rem;
+  margin: 2rem 2rem;
+  background-color: #F5F5F5;
 }
 
 /* IMAGES */
@@ -10897,6 +10906,10 @@ a.text-dark:focus {
   object-fit: cover;
   height: 380px; 
   }
+
+.home-portfolio-img{
+  padding: 1em;
+}
 
 /* FOOTER */
 
