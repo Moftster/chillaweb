@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::view('projects', 'projects');
+Route::view('portfolio', 'portfolio');
 
 Route::get('/services', function () {
     return view('services');

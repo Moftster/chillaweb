@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Projects')
+@section('title', 'Portfolio')
 
 @section('header')
     @parent

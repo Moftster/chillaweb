@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-6">
             <p class="lead">UK Website Design and Development</p>
-            <h4 class="display-4">Custom websites from £999</h4>
+            <h4 class="display-4">Custom websites from £99</h4>
             <hr class="my-4">
             <p class="lead">Quality design | Advanced development | UK studio</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Pricing</a>
@@ -37,13 +37,13 @@
         <h3>What you get with ChillaWeb</h3>
         <hr class="my-4">
         <p class="h5"><strong>Quick and straightforward process</strong></p>
-        <p>Your new website can be up and running in as little as a few days with our simple, streamlined process.</p>
+        <p>Your new website can be up and running in as little as a few days with our simple, streamlined processes.</p>
         <hr class="my-4">
         <p class="h5"><strong>Focus on your project</strong></p>
         <p>You will have a single point of contact whose focus will be solely on delivering your project.</p>
         <hr class="my-4">
         <p class="h5"><strong>Affordable pricing</strong></p>
-        <p>Our packages are designed for small busineses and startups with prices from £999.</p>
+        <p>Our packages are designed for individuals, startups and small busineses with prices from £99.</p>
         <hr class="my-4">
     </div>
 </div>
@@ -58,48 +58,50 @@
 <div class="row section">
     <div class="col-md-4">
     <div class="card card-home" style="">
-        <div class="card-header">
-            Featured
-        </div>
+        <a href="http://www.pioneerproperty.uk/" target="_blank" class="text-dark"><div class="card-header">
+            pioneerproperty.uk
+        </div></a>
         <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">Pioneer Property Management</h5>
+          <p class="card-text">Pioneer Property needed a professional corporate site to showcase their services.</p>
         </div>
 
         <div class="card-body text-center">
-            <button type="button" class="btn btn-outline-secondary">View project</button>
+            <a href="http://www.pioneerproperty.uk/" class="btn btn-outline-secondary">View project</a>
         </div>
       </div>
     </div>
     <div class="col-md-4">
 
       <div class="card card-home" style="">
-        <div class="card-header">Lowtono.co
-          </div>
+        <a href="http://lowtono.co/" target="_blank" class="text-dark">
+            <div class="card-header">lowtono.co
+          </div></a>
         <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">Low To No</h5>
+          <p class="card-text">Low To No is a review site for low alcohol and alchohol-free beverages.</p>
         </div>
 
         <div class="card-body text-center">
-            <button type="button" class="btn btn-outline-secondary">View project</button>
+            <a href="http://lowtono.co/" class="btn btn-outline-secondary">View project</a>
         </div>
       </div>
     </div>
     <div class="col-md-4 card-home">
       <div class="card" style="">
-        <div class="card-header">
-            <h5 class="card-title">www.lowtono.co</h5>
-          </div>
+        <a href="https://newtodo.today/" target="_blank" class="text-dark"><div class="card-header">
+                newtodo.today
+        </div></a>
         <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">New To Do</h5>
+          <p class="card-text">New To Do is a simple to do list focussing users on getting things done here and now.</p>
         </div>
         <div class="text-center card-body">
-          <button type="button" class="btn btn-outline-secondary">View project</button>
+          <a href="https://newtodo.today/" class="btn btn-outline-secondary">View project</a>
+
         </div>
       </div>
     </div>
@@ -123,6 +125,9 @@
           
         </div>
       </div>
+
+      <br>
+      <br>
 
 
 @endsection
