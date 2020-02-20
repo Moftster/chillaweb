@@ -16,7 +16,7 @@
             <hr class="my-4">
             <p class="lead">Quality design | Advanced development | UK studio</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Pricing</a>
-            <a class="btn btn-outline-primary btn-lg" href="#" role="button">Portfolio</a>
+            <a class="btn btn-outline-primary btn-lg" href="/portfolio" role="button">Portfolio</a>
             </p>
         </div>
         <div class="col-md-6">
@@ -110,7 +110,7 @@
 <br>
 
 <div class="text-center">
-    <button type="button" class="btn btn-primary btn-lg">View full portfolio</button>
+    <a href="/portfolio" class="btn btn-primary btn-lg">View full portfolio</a>
 </div>
 <br>
 <hr>
@@ -119,8 +119,8 @@
 
     <div class="card section text-center">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Get your project off the ground</h5>
+          <p class="card-text">Click below for a free quote for the cost of turning your idea into reality.</p>
           <a href="#" class="btn btn-success btn-lg">Get a free quote</a>
           
         </div>

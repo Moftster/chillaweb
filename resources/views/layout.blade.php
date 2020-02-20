@@ -110,10 +110,22 @@
 </div>
 
 @section('footer')
-<footer class="footer">
+<footer class="footer ">
     <div class="container">
-      <span class="text-muted">This is the footer</span>
-      <img src="/resources/icons/instagram.svg" alt="Instagram logo">
+
+        <div class="row d-flex justify-content-center">
+            <img class="social-icon" src="{{ asset('icons/insta.png') }}" alt="Instagram logo">
+            <img class="social-icon" src="{{ asset('icons/twitter.png') }}" alt="Twitter logo">
+            <img class="social-icon" src="{{ asset('icons/youtube.png') }}" alt="YouTube logo">
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <span class="text-muted">This is the footer
+        </div>
+      </span>
+
+
+      {{-- <img src="{{ asset('img/server-woman.png') }}"> --}}
 
     </div>
   </footer>
