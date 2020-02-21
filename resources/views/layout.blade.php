@@ -51,7 +51,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/blog">Blog</a>
                         </li>        
-                        <li class="nav-item">
+                        <li class="nav-item nav-quote-button">
                             <a href="#" class="btn btn-success ">Get a free quote</a>
                         </li>        
                         

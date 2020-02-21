@@ -592,6 +592,10 @@ pre code {
   .container {
     max-width: 720px;
   }
+
+  .nav-quote-button {
+    padding-left: 20px !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10928,6 +10932,10 @@ a.text-dark:focus {
   background-color: #f5f5f5;
   padding: 2em;
 }
+
+/* .nav-quote-button {
+  padding-left: 20px;
+} */
 
 .social-icon{
   height: 40px;
