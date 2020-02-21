@@ -10884,6 +10884,12 @@ a.text-dark:focus {
   }
 }
 
+/* NAVBAR */
+
+.header-font{
+  font-size: 1.8em;
+}
+
 /* HOMEPAGE CARD SPACING */
 
 
