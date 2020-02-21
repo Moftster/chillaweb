@@ -33,7 +33,9 @@ class emailRegistrationController extends Controller
         // echo "Email sent";
         });
 
-        return redirect('/');
+        $req->session()->flash('success', 'Your message has been sent. You will receive a response shortly');
+
+        return redirect('/contact');
 
     }
 }
