@@ -18,8 +18,17 @@ class emailRegistrationController extends Controller
         $contactEmail = $req->contactEmail;
         $contactMessage = $req->contactMessage;
         $data = array('name'=> $contactName, 'email'=> $contactEmail, 'contactMessage' => $contactMessage);
+        
+        // Mail to ChillaWeb
         Mail::send('email/confirmuser', $data, function($message) use ($emailTo, $emailAddress){
             $message->to($emailAddress)
+            ->subject('ChillaWeb contact form submission');
+        // echo "Email sent";
+        });
+
+        // Confirmation email to user
+        Mail::send('email/confirmtouser', $data, function($message) use ($contactName, $contactEmail){
+            $message->to($contactEmail)
             ->subject('ChillaWeb contact form submission');
         // echo "Email sent";
         });
