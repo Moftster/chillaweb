@@ -19,11 +19,11 @@
     <div class="form-group row">
         <div class="col-md-6">
             <label for="nameInput">Name</label>
-            <input type="text" class="form-control" id="nameInput" name="contactName" placeholder="Joe Bloggs">
+            <input type="text" class="form-control" id="nameInput" name="contactName" >
         </div>
         <div class="col-md-6">
             <label for="emailInput">Email</label>
-            <input type="email" class="form-control" id="emailInput" name="contactEmail" placeholder="name@example.com">
+            <input type="email" class="form-control" id="emailInput" name="contactEmail">
         </div>
     </div>
     <div class="form-group row">
