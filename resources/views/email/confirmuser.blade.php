@@ -1,8 +1,10 @@
-{{$name}} has applied for access to ChillaWeb using email address {{$email}}. 
+{{$name}} has completed the ChillaWeb contact form. 
 
 <br>
+
+Their email address is {{$email}} and their message is as follows:
+
 <br>
 
-Click here to confirm account registration.
-
+{{$contactMessage}}
 
