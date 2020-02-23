@@ -61,7 +61,7 @@
         <a href="http://www.pioneerproperty.uk/" target="_blank" class="text-dark text-center"><div class="card-header">
             www.pioneerproperty.uk
         </div></a>
-        <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
+        <img class="card-img-top" src="{{ asset('img/pioneer-fnl2.jpg') }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Pioneer Property Management</h5>
           <p class="card-text">Pioneer Property needed a professional corporate site to showcase their services.</p>
@@ -79,7 +79,7 @@
         <a href="http://lowtono.co/" target="_blank" class="text-dark">
             <div class="card-header text-center">www.lowtono.co
           </div></a>
-        <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
+        <img class="card-img-top" src="{{ asset('img/lowtono-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Low To No</h5>
           <p class="card-text">Low To No is a review site for low alcohol and alchohol-free beverages.</p>
@@ -95,7 +95,7 @@
         <a href="https://newtodo.today/" target="_blank" class="text-dark text-center"><div class="card-header">
                 www.newtodo.today
         </div></a>
-        <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
+        <img class="card-img-top" src="{{ asset('img/newtodo-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">New To Do</h5>
           <p class="card-text">New To Do is a simple to do list focussing users on getting things done here and now.</p>
