@@ -64,7 +64,7 @@
         <img class="card-img-top" src="{{ asset('img/pioneer-fnl2.jpg') }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Pioneer Property Management</h5>
-          <p class="card-text">Pioneer Property needed a professional corporate site to showcase their services.</p>
+          <p class="card-text">Professional corporate site to showcasing letting and property management services.</p>
         </div>
 
         <div class="card-body text-center">
