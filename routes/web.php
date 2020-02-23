@@ -25,6 +25,9 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
+// Quote page
+Route::get('/quote', 'QuoteController@index');
+
 
 // Post blog to database
 Route::view('post', 'post');

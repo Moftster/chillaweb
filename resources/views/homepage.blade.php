@@ -64,7 +64,7 @@
         <img class="card-img-top" src="{{ asset('img/pioneer-fnl2.jpg') }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Pioneer Property Management</h5>
-          <p class="card-text">Professional corporate site to showcasing letting and property management services.</p>
+          <p class="card-text">Professional corporate site showcasing letting and property management services.</p>
         </div>
 
         <div class="card-body text-center">
@@ -82,7 +82,7 @@
         <img class="card-img-top" src="{{ asset('img/lowtono-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Low To No</h5>
-          <p class="card-text">Low To No is a review site for low alcohol and alchohol-free beverages.</p>
+          <p class="card-text">Conetent Managment System and review site for low alcohol and alchohol-free beverages.</p>
         </div>
 
         <div class="card-body text-center">
@@ -98,7 +98,7 @@
         <img class="card-img-top" src="{{ asset('img/newtodo-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">New To Do</h5>
-          <p class="card-text">New To Do is a simple to do list focussing users on getting things done here and now.</p>
+          <p class="card-text">To do list and task management application focussing users on immediate priorities.</p>
         </div>
         <div class="text-center card-body">
           <a href="https://newtodo.today/" class="btn btn-outline-secondary">View project</a>

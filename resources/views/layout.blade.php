@@ -52,7 +52,7 @@
                             <a class="nav-link" href="/blog">Blog</a>
                         </li>        
                         <li class="nav-item nav-quote-button">
-                            <a href="#" class="btn btn-success ">Get a free quote</a>
+                            <a href="/quote" class="btn btn-success ">Get a free quote</a>
                         </li>        
                         
                         
