@@ -58,8 +58,8 @@
 <div class="row section">
     <div class="col-md-4">
     <div class="card card-home" style="">
-        <a href="http://www.pioneerproperty.uk/" target="_blank" class="text-dark"><div class="card-header">
-            pioneerproperty.uk
+        <a href="http://www.pioneerproperty.uk/" target="_blank" class="text-dark text-center"><div class="card-header">
+            www.pioneerproperty.uk
         </div></a>
         <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
         <div class="card-body">
@@ -75,8 +75,9 @@
     <div class="col-md-4">
 
       <div class="card card-home" style="">
+        
         <a href="http://lowtono.co/" target="_blank" class="text-dark">
-            <div class="card-header">lowtono.co
+            <div class="card-header text-center">www.lowtono.co
           </div></a>
         <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
         <div class="card-body">
@@ -91,8 +92,8 @@
     </div>
     <div class="col-md-4 card-home">
       <div class="card" style="">
-        <a href="https://newtodo.today/" target="_blank" class="text-dark"><div class="card-header">
-                newtodo.today
+        <a href="https://newtodo.today/" target="_blank" class="text-dark text-center"><div class="card-header">
+                www.newtodo.today
         </div></a>
         <img class="card-img-top home-portfolio-img" src="{{ asset('img/screens.png') }}" alt="Card image cap">
         <div class="card-body">
