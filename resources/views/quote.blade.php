@@ -19,7 +19,7 @@
 <br>
 <br>
 
-<form action="" id="quote-form">
+<form action="/" id="quote-form">
     <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
@@ -87,7 +87,7 @@
 
 
     <br><br>
-    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+    <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="calculateWebsitePrice()">Submit</button>
 </form>
 
 @endsection
