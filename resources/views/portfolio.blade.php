@@ -26,9 +26,9 @@
         <img class="card-img-top" src="{{ asset('img/lowtono-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
 
-            <h5 class="card-title">Low To No</h5>
+            <h5 class="card-title text-center">Low To No</h5>
 
-            <p class="card-text">Low alcohol and alchohol-free beverage review site. Features include:</p>
+            <p class="card-text text-center">Low alcohol and alchohol-free beverage review site. Features include:</p>
 
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">User registration and login</li>
@@ -52,9 +52,9 @@
         <img class="card-img-top" src="{{ asset('img/pioneer-fnl2.jpg') }}" alt="Card image cap">
         <div class="card-body">
 
-          <h5 class="card-title">Pioneer Property</h5>
+          <h5 class="card-title text-center">Pioneer Property</h5>
 
-          <p class="card-text">Letting and property management company brochure site. Features include:</p>
+          <p class="card-text text-center">Letting and property management company brochure site. Features include:</p>
 
           <ul class="list-group list-group-flush">
               <li class="list-group-item">Integration with Google Maps API</li>
@@ -83,9 +83,9 @@
                 <img class="card-img-top" src="{{ asset('img/newtodo-fnl.jpg') }}" alt="Card image cap">
                 <div class="card-body">
 
-          <h5 class="card-title">New To Do</h5>
+          <h5 class="card-title text-center">New To Do</h5>
 
-          <p class="card-text">To do list and task managment application. Features include:</p>
+          <p class="card-text text-center">To do list and task managment application. Features include:</p>
 
           <ul class="list-group list-group-flush">
               <li class="list-group-item">OAuth login with Google API</li>
@@ -109,9 +109,9 @@
               <img class="card-img-top" src="{{ asset('img/politibot-fnl.jpg') }}" alt="Card image cap">
               <div class="card-body">
 
-        <h5 class="card-title">Politi-Bot</h5>
+        <h5 class="card-title text-center">Politi-Bot</h5>
 
-        <p class="card-text">Soundboard application providing stock political responses. Features include:</p>
+        <p class="card-text text-center">Soundboard application providing stock political responses. Features include:</p>
 
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Audio integration using JavaScript</li>

@@ -1,33 +1,41 @@
 
     // console.log("JS file linked!");
-        
-    // var theForm = document.forms["quote-form"];
 
-    // var website_price = new Array();
+    // Base site price
+    var websitePrice = 299;
 
-    // website_price["sales-marketing"]=20;
-    // website_price["Round8"]=25;
-    // website_price["Round10"]=35;
-    // website_price["Round12"]=75;
-    
+
+
 
 
     function calculateWebsitePrice()
         {
-            // Base site price
-            var websitePrice = 299;
-
+                
             //Get a reference to the form id="cakeform"
             var theForm = document.forms["quote-form"];
-
-            //Get a reference to the checkbox id="includecandles"
-            var salesMarketing = theForm.elements["cb-sales-marketing"];
         
-                //If they checked the box set candlePrice to 5
-                if(salesMarketing.checked==true)
-                {
-                    websitePrice = websitePrice + 200;
-                }
+            //Get a reference to the checkbox elements in page
+            var salesMarketing = theForm.elements["cb-sales-marketing"];
+            var informationSource = theForm.elements["cb-information-source"];
+            var leadGeneration = theForm.elements["cb-lead-generation"];
+
+            
+            // If conditions to add additional cost to price
+
+            if(salesMarketing.checked==true)
+            {
+                websitePrice = websitePrice + 200;
+            }
+
+            if(informationSource.checked==true)
+            {
+                websitePrice = websitePrice + 120;
+            }
+
+            if(leadGeneration.checked==true)
+            {
+                websitePrice = websitePrice * 2;
+            }
             
             //finally we return the candlePrice
             console.log(websitePrice);
