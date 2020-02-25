@@ -144,6 +144,9 @@
     </div>
   </footer>
 </div>
+
+@yield('jsfile')
+
 </body>
 </html>
 @show

@@ -19,7 +19,7 @@
 <br>
 <br>
 
-<form action="">
+<form action="" id="quote-form">
     <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
@@ -92,6 +92,7 @@
 
 @endsection
 
+<script src="{{ asset('js/quote.js') }}"><script>
 
 @section('footer')
     @parent
