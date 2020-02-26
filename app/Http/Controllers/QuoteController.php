@@ -11,4 +11,10 @@ class QuoteController extends Controller
         return view('/quote');
 
     }
+
+    public function summary()
+    {
+        return view('/quotesummary');
+
+    }
 }

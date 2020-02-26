@@ -1,12 +1,17 @@
 
-    // console.log("JS file linked!");
+    console.log("JS file linked!");
 
     // Base site price
+
+    // $(document).ready(function() {
+    //     $("#MyModal").modal();
+    //   });
+
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      });
+
     var websitePrice = 299;
-
-
-
-
 
     function calculateWebsitePrice()
         {

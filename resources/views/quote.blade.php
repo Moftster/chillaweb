@@ -19,7 +19,7 @@
 <br>
 <br>
 
-<form action="/" id="quote-form">
+<form action="/quotesummary" id="quote-form" method="POST">
     <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
@@ -84,11 +84,40 @@
 </ul>
 </div>
 
+<br><br><br>
 
+  <h5 class="text-center">Based on your responses the estimated cost of your site is approximately <strong>£££</strong></h5>
 
-    <br><br>
-    <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="calculateWebsitePrice()">Submit</button>
-</form>
+<br><br><br>
+
+<h5 class="text-center">If you wish to discuss further please enter your details below and we will be in contact.</h5>
+
+  <div class="justify-content-md-center">
+    <div class="row justify-content-md-center">
+      <div class="col-md-7">
+          <label for="nameInput">Name</label>
+          <input type="text" class="form-control" id="nameInput" name="contactName" >
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-7">
+          <label for="emailInput">Email</label>
+          <input type="email" class="form-control" id="emailInput" name="contactEmail">
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-7">
+          <label for="phoneInput">Telephone</label>
+          <input type="tel" class="form-control" id="phoneInput" name="contactPhone">
+      </div>
+    </div>
+</div>
+
+<br><br>
+
+<button class="btn btn-primary btn-lg btn-block" type="submit" onclick="calculateWebsitePrice()">Submit</button>
+
+  </form>
 
 @endsection
 
