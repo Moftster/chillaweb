@@ -24,7 +24,7 @@
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
     <ul>
-        <li><input type="checkbox" name="site-purpose" value="sales-marketing" id="cb-sales-marketing" />
+        <li><input type="checkbox" name="site-purpose" value="sales-marketing" id="cb-sales-marketing" onclick="reCalculateTotal()" />
           <label for="cb-sales-marketing"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Sales & Marketing </div>
         </li>

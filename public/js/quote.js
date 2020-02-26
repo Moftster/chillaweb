@@ -5,9 +5,44 @@
     // window.alert(websitePrice);
 
     window.onload = function() {
+
         document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
 
     }
+
+    function reCalculateTotal() 
+    {
+
+        // console.log("Function linked");
+
+       //Get a reference to the form id="cakeform"
+        var theForm = document.forms["quote-form"];
+
+        //Get a reference to the checkbox elements in page
+        var salesMarketing = theForm.elements["cb-sales-marketing"];
+        var informationSource = theForm.elements["cb-information-source"];
+        var leadGeneration = theForm.elements["cb-lead-generation"];
+
+        if(salesMarketing.checked==true)
+        {
+            websitePrice = websitePrice + 300;
+        } else {
+            websitePrice = websitePrice - 300;
+        }
+
+        if(informationSource.checked==true)
+        {
+            websitePrice = websitePrice + 120;
+        }
+
+        if(leadGeneration.checked==true)
+        {
+            websitePrice = websitePrice * 2;
+        }
+
+        document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+}
     // console.log(websitePrice);
 
     function calculateWebsitePrice()
