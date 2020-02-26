@@ -1,17 +1,14 @@
-
     console.log("JS file linked!");
 
-    // Base site price
-
-    // $(document).ready(function() {
-    //     $("#MyModal").modal();
-    //   });
-
-      $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-      });
-
     var websitePrice = 299;
+
+    // window.alert(websitePrice);
+
+    window.onload = function() {
+        document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+    }
+    // console.log(websitePrice);
 
     function calculateWebsitePrice()
         {
@@ -46,6 +43,8 @@
             console.log(websitePrice);
             return websitePrice;
         }
+
+
 
     
     // function calculateWebsitePrice()

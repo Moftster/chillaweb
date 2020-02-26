@@ -86,7 +86,8 @@
 
 <br><br><br>
 
-  <h5 class="text-center">Based on your responses the estimated cost of your site is approximately <strong>£££</strong></h5>
+  <h5 class="text-center">Based on your responses the estimated cost of your site is approximately</h5>
+  <h3 class="text-center" id="websiteDisplayPrice"></h3>
 
 <br><br><br>
 
@@ -118,6 +119,7 @@
 <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="calculateWebsitePrice()">Submit</button>
 
   </form>
+
 
 @endsection
 
