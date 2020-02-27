@@ -20,7 +20,7 @@
             </p>
         </div>
         <div class="col-md-6">
-            <img src="{{ asset('img/server-woman.png') }}" class="img-responsive fit-image" alt="Woman coding">
+            <img src="{{ asset('img/server-woman-bw.png') }}" class="img-responsive fit-image" alt="Woman coding">
         </div>
     </div>
 </div>
@@ -31,7 +31,7 @@
 <div class="row section">
 
     <div class="col-md-5">
-        <img src="{{ asset('img/fullstack2.png') }}" class="img-responsive fit-image" alt="Full stack man">
+        <img src="{{ asset('img/fullstack-bw.png') }}" class="img-responsive fit-image" alt="Full stack man">
     </div>
     <div class="col-md-7">
         <h3>What you get with ChillaWeb</h3>
