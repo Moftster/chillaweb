@@ -248,6 +248,29 @@
                     document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
     
                 } 
+
+                function calculateForumCost() 
+            {
+    
+                var theForm = document.forms["quote-form"];
+    
+                var theElement = theForm.elements["cb-forum"];
+    
+                if(theElement.checked==true)
+                    {
+                        websitePrice = websitePrice + 1200;
+    
+                } 
+    
+                    if(theElement.checked==false)
+                    {
+                        websitePrice = websitePrice - 1200;
+    
+                    } 
+    
+                    document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+    
+                } 
     
 
  

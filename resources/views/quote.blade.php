@@ -76,7 +76,7 @@
       <label for="cb-blog"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Blog</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-forum" />
+    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-forum" onclick="calculateForumCost()"/>
       <label for="cb-forum"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Forum</div>
     </li>
