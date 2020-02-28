@@ -72,7 +72,7 @@
       <label for="cb-live-chat"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Live chat</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-blog" />
+    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-blog" onclick="calculateBlogCost()"/>
       <label for="cb-blog"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Blog</div>
     </li>

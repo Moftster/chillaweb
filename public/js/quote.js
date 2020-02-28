@@ -225,6 +225,29 @@
                     document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
     
                 } 
+  
+                function calculateBlogCost() 
+            {
+    
+                var theForm = document.forms["quote-form"];
+    
+                var blog = theForm.elements["cb-blog"];
+    
+                if(blog.checked==true)
+                    {
+                        websitePrice = websitePrice + 200;
+    
+                } 
+    
+                    if(blog.checked==false)
+                    {
+                        websitePrice = websitePrice - 200;
+    
+                    } 
+    
+                    document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+    
+                } 
     
 
  
