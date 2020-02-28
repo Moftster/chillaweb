@@ -10,7 +10,6 @@
         var cbs = document.getElementsByClassName("cb");
         for (var i = 0; i < cbs.length; i++) {
             cbs[i].checked = true;
-            console.log("running true script");
         }
         obj.checked = true;
     }
@@ -18,7 +17,20 @@
         var cbs = document.getElementsByClassName("cb");
         for (var i = 0; i < cbs.length; i++) {
             cbs[i].checked = false;
-            console.log("running false script");
+        }
+        obj.checked = false;
+    }
+    function bookingChangeTrue(obj) {
+        var cbs = document.getElementsByClassName("booking");
+        for (var i = 0; i < cbs.length; i++) {
+            cbs[i].checked = true;
+        }
+        obj.checked = true;
+    }
+    function bookingChangeFalse(obj) {
+        var cbs = document.getElementsByClassName("booking");
+        for (var i = 0; i < cbs.length; i++) {
+            cbs[i].checked = false;
         }
         obj.checked = false;
     }
@@ -79,16 +91,19 @@
             var theForm = document.forms["quote-form"];
 
             var bookingReservations = theForm.elements["cb-bookings-reservations"];
+            var onlineBookings = theForm.elements["cb-online-bookings"];
 
             if(bookingReservations.checked==true)
                 {
                     websitePrice = websitePrice + 1000;
-
+                    bookingChangeTrue(onlineBookings);
             } 
 
                 if(bookingReservations.checked==false)
                 {
                     websitePrice = websitePrice - 1000;
+                    bookingChangeFalse(onlineBookings);
+
 
                 } 
 
@@ -158,13 +173,25 @@
                 {
                     cbChangeFalse(eCommerce);
                 } 
-
-
             } 
 
-            // if($('#cb-shopping-cart').is(':checked')) {
-            //     $('cb-e-commerce').checked==true;
-            // }
+        function calculateOnlineBookingsCost() 
+        {
+            var theForm = document.forms["quote-form"];
+           
+            var onlineBookings = theForm.elements["cb-online-bookings"];
+            var bookingReservations = theForm.elements["cb-bookings-reservations"];
+
+            if(onlineBookings.checked==true)
+                {
+                    bookingChangeTrue(bookingReservations);
+                } 
+
+            if(onlineBookings.checked==false)
+                {
+                    bookingChangeFalse(bookingReservations);
+                } 
+            } 
 
  
 

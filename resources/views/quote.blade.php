@@ -41,7 +41,7 @@
           <label for="cb-e-commerce"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">E-commerce</div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
+        <li><input class="booking" type="checkbox" name="site-purpose" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
           <label for="cb-bookings-reservations"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Bookings & Reservations</div>
         </li>
@@ -80,7 +80,7 @@
       <label for="cb-forum"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Forum</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-online-bookings" />
+    <li><input class="booking" type="checkbox" name="site-functionality" value="sales-marketing" id="cb-online-bookings" onclick="calculateOnlineBookingsCost()"/>
       <label for="cb-online-bookings"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Online bookings</div>
     </li>
@@ -128,7 +128,7 @@
 
 <br><br>
 
-<button class="btn btn-primary btn-lg btn-block" type="submit" onclick="calculateWebsitePrice()">Submit</button>
+<button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
 
   </form>
 
