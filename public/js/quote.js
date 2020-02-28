@@ -271,6 +271,29 @@
                     document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
     
                 } 
+
+                function calculateCalendarCost() 
+            {
+    
+                var theForm = document.forms["quote-form"];
+    
+                var theElement = theForm.elements["cb-calendar"];
+    
+                if(theElement.checked==true)
+                    {
+                        websitePrice = websitePrice + 500;
+    
+                } 
+    
+                    if(theElement.checked==false)
+                    {
+                        websitePrice = websitePrice - 500;
+    
+                    } 
+    
+                    document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+    
+                } 
     
 
  

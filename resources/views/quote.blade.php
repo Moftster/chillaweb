@@ -84,9 +84,9 @@
       <label for="cb-online-bookings"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Online bookings</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-calendar" />
+    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-calendar" onclick="calculateCalendarCost()"/>
       <label for="cb-calendar"><img src="{{ asset('icons/showcase2.png') }}" /></label>
-      <div class="label-text text-center">Calendar</div>
+      <div class="label-text text-center">Events calendar</div>
     </li>
     <li><input type="checkbox" name="site-functionality" value="directory-contact" id="cb-directory-contact" />
       <label for="cb-directory-contact"><img src="{{ asset('icons/showcase2.png') }}" /></label>
