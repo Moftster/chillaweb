@@ -203,5 +203,29 @@
 
             } 
 
+            function calculateChatCost() 
+            {
+    
+                var theForm = document.forms["quote-form"];
+    
+                var liveChat = theForm.elements["cb-live-chat"];
+    
+                if(liveChat.checked==true)
+                    {
+                        websitePrice = websitePrice + 500;
+    
+                } 
+    
+                    if(liveChat.checked==false)
+                    {
+                        websitePrice = websitePrice - 500;
+    
+                    } 
+    
+                    document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+    
+                } 
+    
+
  
 
