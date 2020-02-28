@@ -10930,6 +10930,10 @@ input[type="checkbox"][id^="cb"] {
   display: none;
 }
 
+input[type="radio"][id^="cb"] {
+  display: none;
+}
+
 label {
   border: 1px solid #fff;
   padding: 10px;
