@@ -166,13 +166,18 @@
 
             if(shoppingCart.checked==true)
                 {
+                    websitePrice = websitePrice + 2000;
                     cbChangeTrue(eCommerce);
                 } 
 
             if(shoppingCart.checked==false)
                 {
+                    websitePrice = websitePrice - 2000;
                     cbChangeFalse(eCommerce);
                 } 
+
+                document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
             } 
 
         function calculateOnlineBookingsCost() 
@@ -185,12 +190,17 @@
             if(onlineBookings.checked==true)
                 {
                     bookingChangeTrue(bookingReservations);
+                    websitePrice = websitePrice + 1000;
                 } 
 
             if(onlineBookings.checked==false)
                 {
                     bookingChangeFalse(bookingReservations);
+                    websitePrice = websitePrice - 1000;
                 } 
+
+                document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
             } 
 
  
