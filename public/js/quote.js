@@ -144,13 +144,21 @@
         function calculateShoppingCartCost() 
         {
 
-            // calculateECommerceCost();
+            var theForm = document.forms["quote-form"];
+           
+            var shoppingCart = theForm.elements["cb-shopping-cart"];
+            var eCommerce = theForm.elements["cb-e-commerce"];
 
-            // var theForm = document.forms["quote-form"];
+            if(shoppingCart.checked==true)
+                {
+                    cbChangeTrue(eCommerce);
+                } 
 
-            // var eCommerce = theForm.elements[""];
+            if(shoppingCart.checked==false)
+                {
+                    cbChangeFalse(eCommerce);
+                } 
 
-            document.getElementById('cb-e-commerce').checked==true;
 
             } 
 
