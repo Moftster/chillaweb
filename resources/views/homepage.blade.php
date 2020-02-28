@@ -122,7 +122,7 @@
         <div class="card-body">
           <h5 class="card-title">Get your project off the ground</h5>
           <p class="card-text">Click below for a free quote for the cost of turning your idea into reality.</p>
-          <a href="#" class="btn btn-success btn-lg">Get a free quote</a>
+          <a href="/quote" class="btn btn-success btn-lg">Get a free quote</a>
           
         </div>
       </div>
