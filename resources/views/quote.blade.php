@@ -98,6 +98,27 @@
 
 <br><br><br>
 
+<h5 class="text-center"><strong>How would you describe your brand and the desired style of your site?</strong></h5>
+<div class="row text-center icons-center">
+  <div class="col-md-8">
+    <ul>
+      <li><input type="radio" name="site-style" value="bold-innovative" id="cb-bold-innovative"/>
+        <label for="cb-bold-innovative"><img src="{{ asset('icons/showcase2.png') }}" /></label>
+        <div class="label-text text-center">Bold & Innovative</div>
+      </li>
+      <li><input type="radio" name="site-style" value="clean-contemporary" id="cb-clean-contemporary"/>
+        <label for="cb-clean-contemporary"><img src="{{ asset('icons/showcase2.png') }}" /></label>
+        <div class="label-text text-center">Clean & Contemporary</div>
+      </li>
+      <li><input type="radio" name="site-style" value="corporate-traditional" id="cb-corporate-traditional">
+              <label for="cb-corporate-traditional"><img src="{{ asset('icons/showcase2.png') }}" /></label>
+        <div class="label-text text-center">Corporate & Traditional</div>
+      </li>
+    </ul>  
+  </div>
+</div>
+<br><br><br>
+
   <h5 class="text-center">Based on your responses the estimated cost of your site is somehwere in the region of...</h5>
   <h3 class="text-center" id="websiteDisplayPrice"></h3>
 
