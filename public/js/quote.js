@@ -1,8 +1,4 @@
-    console.log("JS file linked!");
-
     var websitePrice = 299;
-
-    // window.alert(websitePrice);
 
     window.onload = function() {
 
@@ -10,94 +6,157 @@
 
     }
 
-    function reCalculateTotal() 
+    function cbChangeTrue(obj) {
+        var cbs = document.getElementsByClassName("cb");
+        for (var i = 0; i < cbs.length; i++) {
+            cbs[i].checked = true;
+            console.log("running true script");
+        }
+        obj.checked = true;
+    }
+    function cbChangeFalse(obj) {
+        var cbs = document.getElementsByClassName("cb");
+        for (var i = 0; i < cbs.length; i++) {
+            cbs[i].checked = false;
+            console.log("running false script");
+        }
+        obj.checked = false;
+    }
+
+    function calculateSalesCost()
     {
 
-        // console.log("Function linked");
-
-       //Get a reference to the form id="cakeform"
         var theForm = document.forms["quote-form"];
 
-        //Get a reference to the checkbox elements in page
         var salesMarketing = theForm.elements["cb-sales-marketing"];
-        var informationSource = theForm.elements["cb-information-source"];
-        var leadGeneration = theForm.elements["cb-lead-generation"];
+        // var informationSource = theForm.elements["cb-information-source"];
 
         if(salesMarketing.checked==true)
+            {
+                websitePrice = websitePrice + 300;
+
+           } 
+
+            if(salesMarketing.checked==false)
+            {
+                websitePrice = websitePrice - 300;
+
+            } 
+
+            document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+        } 
+
+    function calculateECommerceCost() 
+    {
+
+        var theForm = document.forms["quote-form"];
+
+        var eCommerce = theForm.elements["cb-e-commerce"];
+        var shoppingCart = theForm.elements["cb-shopping-cart"];
+
+        if(eCommerce.checked==true)
+            {
+                websitePrice = websitePrice + 2000;
+                cbChangeTrue(shoppingCart);
+
+           } 
+
+            if(eCommerce.checked==false)
+            {
+                websitePrice = websitePrice - 2000;
+                cbChangeFalse(shoppingCart);
+
+            } 
+
+            document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+        } 
+
+        function calculateBookingsReservationsCost() 
         {
-            websitePrice = websitePrice + 300;
-        } else {
-            websitePrice = websitePrice - 300;
-        }
 
-        if(informationSource.checked==true)
-        {
-            websitePrice = websitePrice + 120;
-        }
-
-        if(leadGeneration.checked==true)
-        {
-            websitePrice = websitePrice * 2;
-        }
-
-        document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
-
-}
-    // console.log(websitePrice);
-
-    function calculateWebsitePrice()
-        {
-                
-            //Get a reference to the form id="cakeform"
             var theForm = document.forms["quote-form"];
-        
-            //Get a reference to the checkbox elements in page
-            var salesMarketing = theForm.elements["cb-sales-marketing"];
-            var informationSource = theForm.elements["cb-information-source"];
-            var leadGeneration = theForm.elements["cb-lead-generation"];
 
-            
-            // If conditions to add additional cost to price
+            var bookingReservations = theForm.elements["cb-bookings-reservations"];
 
-            if(salesMarketing.checked==true)
-            {
-                websitePrice = websitePrice + 200;
-            }
+            if(bookingReservations.checked==true)
+                {
+                    websitePrice = websitePrice + 1000;
 
-            if(informationSource.checked==true)
-            {
-                websitePrice = websitePrice + 120;
-            }
+            } 
 
-            if(leadGeneration.checked==true)
-            {
-                websitePrice = websitePrice * 2;
-            }
-            
-            //finally we return the candlePrice
-            console.log(websitePrice);
-            return websitePrice;
-        }
+                if(bookingReservations.checked==false)
+                {
+                    websitePrice = websitePrice - 1000;
 
+                } 
 
+                document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
 
-    
-    // function calculateWebsitePrice()
-    // {
-    //     console.log("Hello world!");
-    //     // return totalPrice;
-    // }
+            } 
+        function calculateSocialNetworkCost() 
+        {
 
-    // var totalPrice = 1000;
+            var theForm = document.forms["quote-form"];
 
-    // if(totalPrice <= 500 ) {
-    //     console.log("Based on your responses the estimated cost of your site is approximately £300-£500");
-    // } else if(totalPrice >= 500 && totalPrice < 1000) {
-    //     console.log("Based on your responses the estimated cost of your site is approximately £500-£1,000");
-    // } else if(totalPrice >= 1000 && totalPrice < 2000) {
-    //     console.log("Based on your responses the estimated cost of your site is approximately £1,000-£2,000");
-    // }else if(totalPrice >= 2000 && totalPrice < 5000) {
-    //     console.log("Based on your responses the estimated cost of your site is approximately £2,000-£5,000");
-    // } else if(totalPrice >= 5000 && totalPrice < 10000) {
-    //     console.log("Based on your responses the estimated cost of your site is approximately £5,000-£10,000");
-    // };
+            var socialNetwork = theForm.elements["cb-social-network"];
+
+            if(socialNetwork.checked==true)
+                {
+                    websitePrice = websitePrice + 1200;
+
+            } 
+
+                if(socialNetwork.checked==false)
+                {
+                    websitePrice = websitePrice - 1200;
+
+                } 
+
+                document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+            } 
+
+        function calculateLoginRegistrationCost() 
+        {
+
+            var theForm = document.forms["quote-form"];
+
+            var loginRegistration = theForm.elements["cb-login-registration"];
+
+            if(loginRegistration.checked==true)
+                {
+                    websitePrice = websitePrice + 200;
+
+            } 
+
+                if(loginRegistration.checked==false)
+                {
+                    websitePrice = websitePrice - 200;
+
+                } 
+
+                document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+            } 
+
+        function calculateShoppingCartCost() 
+        {
+
+            // calculateECommerceCost();
+
+            // var theForm = document.forms["quote-form"];
+
+            // var eCommerce = theForm.elements[""];
+
+            document.getElementById('cb-e-commerce').checked==true;
+
+            } 
+
+            // if($('#cb-shopping-cart').is(':checked')) {
+            //     $('cb-e-commerce').checked==true;
+            // }
+
+ 
+

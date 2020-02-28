@@ -23,8 +23,9 @@
     <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
+  <div class="col-md-8">
     <ul>
-        <li><input type="checkbox" name="site-purpose" value="sales-marketing" id="cb-sales-marketing" onclick="reCalculateTotal()" />
+        <li><input type="checkbox" name="site-purpose" value="sales-marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
           <label for="cb-sales-marketing"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Sales & Marketing </div>
         </li>
@@ -32,19 +33,24 @@
           <label for="cb-information-source"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Information source</div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="lead-generation" id="cb-lead-generation" />
+        <li><input type="checkbox" name="site-purpose" value="lead-generation" id="cb-lead-generation"/>
           <label for="cb-lead-generation"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Lead generation</div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="e-commerce" id="cb-e-commerce" />
+        <li><input class="cb" type="checkbox" name="site-purpose" value="e-commerce" id="cb-e-commerce" onclick="calculateECommerceCost()"/>
           <label for="cb-e-commerce"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">E-commerce</div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="bookings-reservations" id="cb-bookings-reservations" />
+        <li><input type="checkbox" name="site-purpose" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
           <label for="cb-bookings-reservations"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Bookings & Reservations</div>
         </li>
+        <li><input type="checkbox" name="site-purpose" value="social-network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
+          <label for="cb-social-network"><img src="{{ asset('icons/showcase2.png') }}" /></label>
+          <div class="label-text text-center">Social network</div>
+        </li>
     </ul>
+  </div>
 </div>
 
 <br><br><br>
@@ -52,12 +58,13 @@
 <h5 class="text-center"><strong>What functionality to you require?</strong></h5>
 <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
+  <div class="col-md-8">
 <ul>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-login-registration" />
+    <li><input type="checkbox" name="site-functionality" value="login-registration" id="cb-login-registration" onclick="calculateLoginRegistrationCost()"/>
       <label for="cb-login-registration"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">User login & registration</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-shopping-cart" />
+    <li><input class="cb" type="checkbox" name="site-functionality" value="sales-marketing" id="cb-shopping-cart" onclick="calculateShoppingCartCost()"/>
       <label for="cb-shopping-cart"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Shopping cart</div>
     </li>
@@ -81,12 +88,17 @@
       <label for="cb-calendar"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Calendar</div>
     </li>
+    <li><input type="checkbox" name="site-functionality" value="directory-contact" id="cb-directory-contact" />
+      <label for="cb-directory-contact"><img src="{{ asset('icons/showcase2.png') }}" /></label>
+      <div class="label-text text-center">Directory & Contact</div>
+    </li>
 </ul>
+</div>
 </div>
 
 <br><br><br>
 
-  <h5 class="text-center">Based on your responses the estimated cost of your site is approximately</h5>
+  <h5 class="text-center">Based on your responses the estimated cost of your site is somehwere in the region of...</h5>
   <h3 class="text-center" id="websiteDisplayPrice"></h3>
 
 <br><br><br>
@@ -124,6 +136,7 @@
 @endsection
 
 <script src="{{ asset('js/quote.js') }}"><script>
+
 
 @section('footer')
     @parent
