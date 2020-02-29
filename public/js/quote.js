@@ -295,29 +295,6 @@
     
                 } 
 
-            //     function calculateTimescaleCost() 
-            // {
-    
-            //     var theForm = document.forms["quote-form"];
-    
-            //     var theElement = theForm.elements["cb-one-month"];
-    
-            //     if(theElement.checked==true)
-            //         {
-            //             websitePrice = websitePrice + 500;
-    
-            //     } 
-    
-            //         if(theElement.checked!==true)
-            //         {
-            //             websitePrice = websitePrice - 500;
-    
-            //         } 
-    
-            //         document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
-    
-            //     } 
-
                 var timescaleCosts = new Array();
                 timescaleCosts["one-month"]=500;
                 timescaleCosts["three-months"]=0;
@@ -349,13 +326,9 @@
                             //If we get a match then we break out of this loop
                             //No reason to continue if we get a match
 
-                            // document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
-
                             break;
                         }
                     }
-
-                    // console.log(websitePrice);
 
                     return withinMonthCost;
 
@@ -365,8 +338,6 @@
                 function calculateTimescaleCost() 
                 {
                     var totalPrice = calculateTimeAdditionalCost();
-                    console.log(totalPrice + websitePrice);
-                    // console.log(websitePrice);
 
                     totalPriceIncludingShortTimeFrame = totalPrice + websitePrice;
 
