@@ -124,24 +124,24 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
     <ul>
-      <li><input type="radio" name="site-budget" value="one-month" id="cb-one-month"/>
+      <li><input type="radio" name="site-budget" value="one-month" id="cb-one-month" onclick="calculateTimescaleCost()"/>
         <label for="cb-one-month"><img src="{{ asset('icons/showcase2.png') }}" /></label>
-        <div class="label-text text-center">Within 1 month</div>
+        <div class="label-text text-center">1 month</div>
       </li>
-      <li><input type="radio" name="site-budget" value="three-months" id="cb-three-months"/>
+      <li><input type="radio" name="site-budget" value="three-months" id="cb-three-months" onclick="calculateTimescaleCost()"/>
         <label for="cb-three-months"><img src="{{ asset('icons/showcase2.png') }}" /></label>
-        <div class="label-text text-center">Within 3 months</div>
+        <div class="label-text text-center">3 months</div>
       </li>
-      <li><input type="radio" name="site-budget" value="six-months" id="cb-six-months">
+      <li><input type="radio" name="site-budget" value="six-months" id="cb-six-months" onclick="calculateTimescaleCost()">
               <label for="cb-six-months"><img src="{{ asset('icons/showcase2.png') }}" /></label>
-        <div class="label-text text-center">Within 6 months</div>
+        <div class="label-text text-center">6 months</div>
       </li>
     </ul>  
   </div>
 </div>
 <br><br><br>
 
-  <h5 class="text-center">Based on your responses the estimated cost of your site is somehwere in the region of...</h5>
+  <h5 class="text-center">Based on your responses the estimated cost of your site is in the region of...</h5>
   <h3 class="text-center" id="websiteDisplayPrice"></h3>
 
 <br><br><br>

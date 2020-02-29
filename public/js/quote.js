@@ -294,6 +294,102 @@
                     document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
     
                 } 
+
+            //     function calculateTimescaleCost() 
+            // {
+    
+            //     var theForm = document.forms["quote-form"];
+    
+            //     var theElement = theForm.elements["cb-one-month"];
+    
+            //     if(theElement.checked==true)
+            //         {
+            //             websitePrice = websitePrice + 500;
+    
+            //     } 
+    
+            //         if(theElement.checked!==true)
+            //         {
+            //             websitePrice = websitePrice - 500;
+    
+            //         } 
+    
+            //         document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+    
+            //     } 
+
+                var timescaleCosts = new Array();
+                timescaleCosts["one-month"]=500;
+                timescaleCosts["three-months"]=0;
+                timescaleCosts["six-months"]=0;
+
+                function calculateTimeAdditionalCost()
+                {
+
+                    withinMonthCost = 0;
+
+                    var theForm = document.forms["quote-form"];
+    
+                    var timescaleRadioButtons = theForm.elements["site-budget"];
+
+                    //Here since there are 3 radio buttons timescaleRadioButtons.length = 3
+                    //We loop through each radio buttons
+                    for(var i = 0; i < timescaleRadioButtons.length; i++)
+                    {
+                        //if the radio button is checked
+                        if(timescaleRadioButtons[i].checked)
+                        {
+                            //we set cakeSizePrice to the value of the selected radio button
+                            //i.e. if the user choose the 8" cake we set it to 25
+                            //by using the cake_prices array
+                            //We get the selected Items value
+                            //For example cake_prices["Round8".value]"
+                            withinMonthCost = timescaleCosts[timescaleRadioButtons[i].value];
+
+                            //If we get a match then we break out of this loop
+                            //No reason to continue if we get a match
+
+                            // document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+                            break;
+                        }
+                    }
+
+                    // console.log(websitePrice);
+
+                    return withinMonthCost;
+
+
+                }
+
+                function calculateTimescaleCost() 
+                {
+                    var totalPrice = calculateTimeAdditionalCost();
+                    console.log(totalPrice + websitePrice);
+                    // console.log(websitePrice);
+
+                    totalPriceIncludingShortTimeFrame = totalPrice + websitePrice;
+
+                    document.getElementById("websiteDisplayPrice").innerHTML = "£"+totalPriceIncludingShortTimeFrame;
+
+                }
+
+
+
+
+                // calculateTimeAdditionalCost();
+
+                // console.log(withinMonthCost);
+
+                // withinMonthCost = calculateTimeAdditionalCost();
+
+                // console.log(withinMonthCost);
+
+                // document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
+
+
+                
+
     
 
  
