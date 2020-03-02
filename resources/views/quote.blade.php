@@ -25,27 +25,27 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
     <ul>
-        <li><input type="checkbox" name="site_purpose" value="sales-marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
+        <li><input type="checkbox" name="site_purpose[]" value="sales and marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
           <label for="cb-sales-marketing"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Sales & Marketing </div>
         </li>
-        <li><input type="checkbox" name="site_purpose" value="information-source" id="cb-information-source" />
+        <li><input type="checkbox" name="site_purpose[]" value="information source" id="cb-information-source" />
           <label for="cb-information-source"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Information source</div>
         </li>
-        <li><input type="checkbox" name="site_purpose" value="lead-generation" id="cb-lead-generation"/>
+        <li><input type="checkbox" name="site_purpose[]" value="lead generation" id="cb-lead-generation"/>
           <label for="cb-lead-generation"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Lead generation</div>
         </li>
-        <li><input class="cb" type="checkbox" name="site_purpose" value="e-commerce" id="cb-e-commerce" onclick="calculateECommerceCost()"/>
+        <li><input class="cb" type="checkbox" name="site_purpose[]" value="e-commerce" id="cb-e-commerce" onclick="calculateECommerceCost()"/>
           <label for="cb-e-commerce"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">E-commerce</div>
         </li>
-        <li><input class="booking" type="checkbox" name="site_purpose" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
+        <li><input class="booking" type="checkbox" name="site_purpose[]" value="bookings and reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
           <label for="cb-bookings-reservations"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Bookings & Reservations</div>
         </li>
-        <li><input type="checkbox" name="site_purpose" value="social-network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
+        <li><input type="checkbox" name="site_purpose[]" value="social network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
           <label for="cb-social-network"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Social network</div>
         </li>
