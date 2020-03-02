@@ -28,7 +28,7 @@ class QuoteController extends Controller
         // $quote->email = $req->contactEmail;
         // $quote->telephone = $req->contactPhone;
  
-        $quote->purpose = "test";
+        $quote->purpose = $req->site_purpose;
         $quote->functionality = $req->site_functionality;
         $quote->brand = $req->site_style;
         $quote->timescale = $req->site_timescale;
