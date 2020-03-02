@@ -307,7 +307,7 @@
 
                     var theForm = document.forms["quote-form"];
     
-                    var timescaleRadioButtons = theForm.elements["site-budget"];
+                    var timescaleRadioButtons = theForm.elements["site_timescale"];
 
                     //Here since there are 3 radio buttons timescaleRadioButtons.length = 3
                     //We loop through each radio buttons
