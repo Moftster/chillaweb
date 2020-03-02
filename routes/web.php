@@ -26,9 +26,8 @@ Route::get('/contact', function() {
 });
 
 // Quote page
-Route::get('/quote', 'QuoteController@index');
-// Route::post('/quotesummary', 'QuoteController@summary');
-
+Route::get('quote', 'QuoteController@index');
+Route::post('quotesummary', 'QuoteController@submitQuoteDetails');
 
 // Post blog to database
 Route::view('post', 'post');

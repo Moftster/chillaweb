@@ -18,34 +18,34 @@
 <br>
 <br>
 <br>
-
-<form action="/quotesummary" id="quote-form" method="POST">
-    <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
+<form enctype="multipart/form-data" action="quotesummary" id="quote-form" method="POST" name="quoteForm">
+  @csrf  
+  <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
   <div class="col-md-8">
     <ul>
-        <li><input type="checkbox" name="site-purpose" value="sales-marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
+        <li><input type="checkbox" name="site_purpose" value="sales-marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
           <label for="cb-sales-marketing"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Sales & Marketing </div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="information-source" id="cb-information-source" />
+        <li><input type="checkbox" name="site_purpose" value="information-source" id="cb-information-source" />
           <label for="cb-information-source"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Information source</div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="lead-generation" id="cb-lead-generation"/>
+        <li><input type="checkbox" name="site_purpose" value="lead-generation" id="cb-lead-generation"/>
           <label for="cb-lead-generation"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Lead generation</div>
         </li>
-        <li><input class="cb" type="checkbox" name="site-purpose" value="e-commerce" id="cb-e-commerce" onclick="calculateECommerceCost()"/>
+        <li><input class="cb" type="checkbox" name="site_purpose" value="e-commerce" id="cb-e-commerce" onclick="calculateECommerceCost()"/>
           <label for="cb-e-commerce"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">E-commerce</div>
         </li>
-        <li><input class="booking" type="checkbox" name="site-purpose" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
+        <li><input class="booking" type="checkbox" name="site_purpose" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
           <label for="cb-bookings-reservations"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Bookings & Reservations</div>
         </li>
-        <li><input type="checkbox" name="site-purpose" value="social-network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
+        <li><input type="checkbox" name="site_purpose" value="social-network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
           <label for="cb-social-network"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Social network</div>
         </li>
@@ -60,35 +60,35 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
 <ul>
-    <li><input type="checkbox" name="site-functionality" value="login-registration" id="cb-login-registration" onclick="calculateLoginRegistrationCost()"/>
+    <li><input type="checkbox" name="site_functionality" value="login-registration" id="cb-login-registration" onclick="calculateLoginRegistrationCost()"/>
       <label for="cb-login-registration"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">User login & registration</div>
     </li>
-    <li><input class="cb" type="checkbox" name="site-functionality" value="sales-marketing" id="cb-shopping-cart" onclick="calculateShoppingCartCost()"/>
+    <li><input class="cb" type="checkbox" name="site_functionality" value="sales-marketing" id="cb-shopping-cart" onclick="calculateShoppingCartCost()"/>
       <label for="cb-shopping-cart"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Shopping cart</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-live-chat" onclick="calculateChatCost()"/>
+    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-live-chat" onclick="calculateChatCost()"/>
       <label for="cb-live-chat"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Live chat</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-blog" onclick="calculateBlogCost()"/>
+    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-blog" onclick="calculateBlogCost()"/>
       <label for="cb-blog"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Blog</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-forum" onclick="calculateForumCost()"/>
+    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-forum" onclick="calculateForumCost()"/>
       <label for="cb-forum"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Forum</div>
     </li>
-    <li><input class="booking" type="checkbox" name="site-functionality" value="sales-marketing" id="cb-online-bookings" onclick="calculateOnlineBookingsCost()"/>
+    <li><input class="booking" type="checkbox" name="site_functionality" value="sales-marketing" id="cb-online-bookings" onclick="calculateOnlineBookingsCost()"/>
       <label for="cb-online-bookings"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Online bookings</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="sales-marketing" id="cb-calendar" onclick="calculateCalendarCost()"/>
+    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-calendar" onclick="calculateCalendarCost()"/>
       <label for="cb-calendar"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Events calendar</div>
     </li>
-    <li><input type="checkbox" name="site-functionality" value="directory-contact" id="cb-directory-contact" />
+    <li><input type="checkbox" name="site_functionality" value="directory-contact" id="cb-directory-contact" />
       <label for="cb-directory-contact"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Directory & Contact</div>
     </li>
@@ -102,15 +102,15 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
     <ul>
-      <li><input type="radio" name="site-style" value="bold-innovative" id="cb-bold-innovative"/>
+      <li><input type="radio" name="site_style" value="bold-innovative" id="cb-bold-innovative"/>
         <label for="cb-bold-innovative"><img src="{{ asset('icons/showcase2.png') }}" /></label>
         <div class="label-text text-center">Bold & Innovative</div>
       </li>
-      <li><input type="radio" name="site-style" value="clean-contemporary" id="cb-clean-contemporary"/>
+      <li><input type="radio" name="site_style" value="clean-contemporary" id="cb-clean-contemporary"/>
         <label for="cb-clean-contemporary"><img src="{{ asset('icons/showcase2.png') }}" /></label>
         <div class="label-text text-center">Clean & Contemporary</div>
       </li>
-      <li><input type="radio" name="site-style" value="corporate-traditional" id="cb-corporate-traditional">
+      <li><input type="radio" name="site_style" value="corporate-traditional" id="cb-corporate-traditional">
               <label for="cb-corporate-traditional"><img src="{{ asset('icons/showcase2.png') }}" /></label>
         <div class="label-text text-center">Corporate & Traditional</div>
       </li>
@@ -124,15 +124,15 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
     <ul>
-      <li><input type="radio" name="site-budget" value="one-month" id="cb-one-month" onclick="calculateTimescaleCost()"/>
+      <li><input type="radio" name="site_timescale" value="one-month" id="cb-one-month" onclick="calculateTimescaleCost()"/>
         <label for="cb-one-month"><img src="{{ asset('icons/showcase2.png') }}" /></label>
         <div class="label-text text-center">1 month</div>
       </li>
-      <li><input type="radio" name="site-budget" value="three-months" id="cb-three-months" onclick="calculateTimescaleCost()"/>
+      <li><input type="radio" name="site_timescale" value="three-months" id="cb-three-months" onclick="calculateTimescaleCost()"/>
         <label for="cb-three-months"><img src="{{ asset('icons/showcase2.png') }}" /></label>
         <div class="label-text text-center">3 months</div>
       </li>
-      <li><input type="radio" name="site-budget" value="six-months" id="cb-six-months" onclick="calculateTimescaleCost()">
+      <li><input type="radio" name="site_timescale" value="six-months" id="cb-six-months" onclick="calculateTimescaleCost()">
               <label for="cb-six-months"><img src="{{ asset('icons/showcase2.png') }}" /></label>
         <div class="label-text text-center">6 months</div>
       </li>
@@ -142,7 +142,7 @@
 <br><br><br>
 
   <h5 class="text-center">Based on your responses the estimated cost of your site is in the region of...</h5>
-  <h3 class="text-center" id="websiteDisplayPrice"></h3>
+  <h3 class="text-center" name="estimated_price" id="websiteDisplayPrice"></h3>
 
 <br><br><br>
 
@@ -173,7 +173,7 @@
 
 <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
 
-  </form>
+</form>
 
 
 @endsection
