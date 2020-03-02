@@ -25,7 +25,36 @@
     </div>
 </div>
 
+<hr class="my-4">
 <br>
+
+<div class="row section">
+<div class="row">
+  <div class="col-md-10">
+    <p class="h1"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-7">
+    <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients. We want to give you the most value for money with options for level of service including development hosting and security management.</p>
+  </div>
+  <div class="col-md-4">
+    <p class="h5"><strong>Turn your ideas into reality. </strong></p>
+  </div>
+</div>
+
+    <p></p>
+
+    <h5></h5>
+
+    <p></p>
+
+  <div class="col-md-5">
+  </div>
+</div>
+
+<hr class="my-4">
 <br>
 
 <div class="row section">
