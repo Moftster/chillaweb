@@ -343,20 +343,13 @@
 
                     document.getElementById("websiteDisplayPrice").innerHTML = "£"+totalPriceIncludingShortTimeFrame;
 
+                    document.cookie = 'est_price='+totalPriceIncludingShortTimeFrame;
+
+
                 }
 
+// CREATE COOKIE TO GET PRICE VARIABLE FROM JS TO PHP
 
-
-
-                // calculateTimeAdditionalCost();
-
-                // console.log(withinMonthCost);
-
-                // withinMonthCost = calculateTimeAdditionalCost();
-
-                // console.log(withinMonthCost);
-
-                // document.getElementById("websiteDisplayPrice").innerHTML = "£"+websitePrice;
 
 
                 
