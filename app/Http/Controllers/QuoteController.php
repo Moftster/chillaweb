@@ -35,7 +35,9 @@ class QuoteController extends Controller
         $quote->telephone = $req->contactPhone;
 
         $quote->save();
-        
+
+        $req->session()->flash('success', 'The details of your quote have been sent and you will receive a response shortly.');
+
         return redirect('/quote');
 
     }
