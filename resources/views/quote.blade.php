@@ -25,15 +25,15 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
     <ul>
-        <li><input type="checkbox" name="site_purpose[]" value="sales and marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
+        <li><input type="checkbox" name="site_purpose[]" value="sales-marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
           <label for="cb-sales-marketing"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Sales & Marketing </div>
         </li>
-        <li><input type="checkbox" name="site_purpose[]" value="information source" id="cb-information-source" />
+        <li><input type="checkbox" name="site_purpose[]" value="information-source" id="cb-information-source" />
           <label for="cb-information-source"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Information source</div>
         </li>
-        <li><input type="checkbox" name="site_purpose[]" value="lead generation" id="cb-lead-generation"/>
+        <li><input type="checkbox" name="site_purpose[]" value="lead-generation" id="cb-lead-generation"/>
           <label for="cb-lead-generation"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Lead generation</div>
         </li>
@@ -41,11 +41,11 @@
           <label for="cb-e-commerce"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">E-commerce</div>
         </li>
-        <li><input class="booking" type="checkbox" name="site_purpose[]" value="bookings and reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
+        <li><input class="booking" type="checkbox" name="site_purpose[]" value="bookings-reservations" id="cb-bookings-reservations" onclick="calculateBookingsReservationsCost()" />
           <label for="cb-bookings-reservations"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Bookings & Reservations</div>
         </li>
-        <li><input type="checkbox" name="site_purpose[]" value="social network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
+        <li><input type="checkbox" name="site_purpose[]" value="social-network" id="cb-social-network" onclick="calculateSocialNetworkCost()" />
           <label for="cb-social-network"><img src="{{ asset('icons/showcase2.png') }}" /></label>
           <div class="label-text text-center">Social network</div>
         </li>
@@ -60,35 +60,35 @@
 <div class="row text-center icons-center">
   <div class="col-md-8">
 <ul>
-    <li><input type="checkbox" name="site_functionality" value="login-registration" id="cb-login-registration" onclick="calculateLoginRegistrationCost()"/>
+    <li><input type="checkbox" name="site_functionality[]" value="login-registration" id="cb-login-registration" onclick="calculateLoginRegistrationCost()"/>
       <label for="cb-login-registration"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">User login & registration</div>
     </li>
-    <li><input class="cb" type="checkbox" name="site_functionality" value="sales-marketing" id="cb-shopping-cart" onclick="calculateShoppingCartCost()"/>
+    <li><input class="cb" type="checkbox" name="site_functionality[]" value="shopping-cart" id="cb-shopping-cart" onclick="calculateShoppingCartCost()"/>
       <label for="cb-shopping-cart"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Shopping cart</div>
     </li>
-    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-live-chat" onclick="calculateChatCost()"/>
+    <li><input type="checkbox" name="site_functionality[]" value="live-chat" id="cb-live-chat" onclick="calculateChatCost()"/>
       <label for="cb-live-chat"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Live chat</div>
     </li>
-    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-blog" onclick="calculateBlogCost()"/>
+    <li><input type="checkbox" name="site_functionality[]" value="blog" id="cb-blog" onclick="calculateBlogCost()"/>
       <label for="cb-blog"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Blog</div>
     </li>
-    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-forum" onclick="calculateForumCost()"/>
+    <li><input type="checkbox" name="site_functionality[]" value="forum" id="cb-forum" onclick="calculateForumCost()"/>
       <label for="cb-forum"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Forum</div>
     </li>
-    <li><input class="booking" type="checkbox" name="site_functionality" value="sales-marketing" id="cb-online-bookings" onclick="calculateOnlineBookingsCost()"/>
+    <li><input class="booking" type="checkbox" name="site_functionality[]" value="online-booking" id="cb-online-bookings" onclick="calculateOnlineBookingsCost()"/>
       <label for="cb-online-bookings"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Online bookings</div>
     </li>
-    <li><input type="checkbox" name="site_functionality" value="sales-marketing" id="cb-calendar" onclick="calculateCalendarCost()"/>
+    <li><input type="checkbox" name="site_functionality[]" value="event-calendar" id="cb-calendar" onclick="calculateCalendarCost()"/>
       <label for="cb-calendar"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Events calendar</div>
     </li>
-    <li><input type="checkbox" name="site_functionality" value="directory-contact" id="cb-directory-contact" />
+    <li><input type="checkbox" name="site_functionality[]" value="directory-contact" id="cb-directory-contact" />
       <label for="cb-directory-contact"><img src="{{ asset('icons/showcase2.png') }}" /></label>
       <div class="label-text text-center">Directory & Contact</div>
     </li>
