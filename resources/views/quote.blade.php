@@ -8,6 +8,53 @@
 
 @section('content')
 
+@error('contactName') 
+<br>
+<div class="row justify-content-md-center">
+<div class="alert alert-danger text-center" role="alert">
+  {{$message}}
+</div>  
+</div>
+@enderror
+
+@error('contactEmail') 
+<br>
+<div class="row justify-content-md-center">
+  <div class="alert alert-danger text-center" role="alert">
+    {{$message}}
+  </div>  
+</div>
+@enderror
+
+@error('contactPhone') 
+<br>
+<div class="row justify-content-md-center">
+  <div class="alert alert-danger text-center" role="alert">
+    {{$message}}
+  </div>  
+</div>
+@enderror
+
+@error('site_timescale') 
+<br>
+<div class="row justify-content-md-center">
+<div class="alert alert-danger text-center" role="alert">
+  {{$message}}
+</div>  
+</div>
+@enderror
+
+@error('site_style') 
+<br>
+<div class="row justify-content-md-center">
+<div class="alert alert-danger text-center" role="alert">
+  {{$message}}
+</div>  
+</div>
+@enderror
+
+
+
 <br>
 
 <div class="text-center">
@@ -24,6 +71,7 @@
     <p class="text-center">(Select all that apply)</p>
 <div class="row text-center icons-center">
   <div class="col-md-8">
+    
     <ul>
         <li><input type="checkbox" name="site_purpose[]" value="sales-marketing" id="cb-sales-marketing" onclick="calculateSalesCost()" />
           <label for="cb-sales-marketing"><img src="{{ asset('icons/showcase2.png') }}" /></label>
@@ -50,6 +98,8 @@
           <div class="label-text text-center">Social network</div>
         </li>
     </ul>
+
+
   </div>
 </div>
 
@@ -118,6 +168,16 @@
   </div>
 </div>
 
+@error('site_style') 
+<br>
+<div class="row justify-content-md-center">
+<div class="alert alert-danger text-center" role="alert">
+  {{$message}}
+</div>  
+</div>
+@enderror
+
+
 <br><br><br>
 
 <h5 class="text-center"><strong>What is the timescale for completion of your project?</strong></h5>
@@ -139,6 +199,17 @@
     </ul>  
   </div>
 </div>
+
+@error('site_timescale') 
+<br>
+<div class="row justify-content-md-center">
+<div class="alert alert-danger text-center" role="alert">
+  {{$message}}
+</div>  
+</div>
+@enderror
+
+
 <br><br><br>
 
   <h5 class="text-center">Based on your responses the estimated cost of your site is in the region of...</h5>
@@ -155,18 +226,48 @@
           <input type="text" class="form-control" id="nameInput" name="contactName" >
       </div>
     </div>
+
+    @error('contactName') 
+      <br>
+    <div class="row justify-content-md-center">
+      <div class="alert alert-danger text-center" role="alert">
+        {{$message}}
+      </div>  
+    </div>
+    @enderror
+
     <div class="row justify-content-md-center">
       <div class="col-md-7">
           <label for="emailInput">Email</label>
           <input type="email" class="form-control" id="emailInput" name="contactEmail">
       </div>
     </div>
+    
+    @error('contactEmail') 
+    <br>
+    <div class="row justify-content-md-center">
+      <div class="alert alert-danger text-center" role="alert">
+        {{$message}}
+      </div>  
+    </div>
+    @enderror
+
     <div class="row justify-content-md-center">
       <div class="col-md-7">
           <label for="phoneInput">Telephone</label>
           <input type="tel" class="form-control" id="phoneInput" name="contactPhone">
       </div>
     </div>
+
+    @error('contactPhone') 
+    <br>
+    <div class="row justify-content-md-center">
+      <div class="alert alert-danger text-center" role="alert">
+        {{$message}}
+      </div>  
+    </div>
+    @enderror
+
 </div>
 
 <br><br>

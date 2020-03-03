@@ -17,13 +17,40 @@ class QuoteController extends Controller
 
     public function submitQuoteDetails(Request $req)
     {
+        $req->validate([
+            'site_timescale' => 'required',
+            'site_style' => 'required',
+            'contactName' => 'required',
+            'contactEmail' => 'required',
+            'contactPhone' => 'required',
+        ]);
+        
         $estimatedPrice = $_COOKIE['est_price'];
         
         $quote = new Quote;
 
-        $purpose = implode(", ", $req->site_purpose);
-        
-        $functionality = implode(", ", $req->site_functionality);
+        if(!empty($req->site_purpose)) 
+        {
+            $purpose = implode(", ", $req->site_purpose);
+        } else {
+            $purpose = "Field left blank";
+        }
+
+        if(!empty($req->site_functionality)) {
+            $functionality = implode(", ", $req->site_functionality);
+        } else {
+            $functionality = "Field left blank";
+        }
+  
+        // if(empty($req->site_functionality)) {
+        //     $functionality = implode(", ", $req->site_functionality);
+        // } else {
+        //     $functionality = "Field left blank";
+        // }
+
+        // $purpose = implode(", ", $req->site_purpose);
+
+        // $functionality = implode(", ", $req->site_functionality);
 
         $quote->purpose = $purpose;
         $quote->functionality = $functionality;
