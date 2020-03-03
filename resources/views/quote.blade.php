@@ -18,7 +18,7 @@
 <br>
 <br>
 <br>
-<form enctype="multipart/form-data" action="quotesummary" id="quote-form" method="POST" name="quoteForm">
+<form enctype="multipart/form-data" action="quotesummary" id="quote-form" method="POST" name="quoteForm" autocomplete="off">
   @csrf  
   <h5 class="text-center"><strong>What is the purpose of your site?</strong></h5>
     <p class="text-center">(Select all that apply)</p>
