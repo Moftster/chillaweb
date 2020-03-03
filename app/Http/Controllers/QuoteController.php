@@ -42,16 +42,6 @@ class QuoteController extends Controller
             $functionality = "Field left blank";
         }
   
-        // if(empty($req->site_functionality)) {
-        //     $functionality = implode(", ", $req->site_functionality);
-        // } else {
-        //     $functionality = "Field left blank";
-        // }
-
-        // $purpose = implode(", ", $req->site_purpose);
-
-        // $functionality = implode(", ", $req->site_functionality);
-
         $quote->purpose = $purpose;
         $quote->functionality = $functionality;
         $quote->brand = $req->site_style;
