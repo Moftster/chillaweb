@@ -10,13 +10,15 @@
 
 @foreach($data as $post)
 
-    <h1>{{ $post->postname }}</h1>
+    <br>
+
+    <h2 class="display-4">{{ $post->postname }}</h2>
 
     <img style="max-width: 300px;" src="/uploads/{{ $post->postimage }}" alt="">
 
     <p>{{ $post->created_at->format('d M Y') }}</p>
 
-    <p>{{ $post->postcontent }}</p>
+    <p>{{ nl2br(e($post->postcontent)) }}</p>
 
 <br>
 
