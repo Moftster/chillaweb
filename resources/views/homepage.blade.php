@@ -31,12 +31,12 @@
 <div class="row section">
 <div class="row">
   <div class="col-md-10">
-    <p class="h1"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p>
+    <p class="h1 ml-2"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p>
   </div>
 </div>
 <br>
 <div class="row">
-  <div class="col-md-7">
+  <div class="col-md-7 ml-4">
     <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients. We want to give you the most value for money with options for level of service including development hosting and security management.</p>
   </div>
   <div class="col-md-4">
