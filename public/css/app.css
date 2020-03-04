@@ -11001,6 +11001,32 @@ label img {
   padding: 1em;
 }
 
+.img-center{
+  text-align: center;
+  /* margin: 1em; */
+  /* padding: 1em; */
+}
+
+/* BLOG */
+
+.blog-post-img{
+  padding: 1em;
+  text-align: center;
+  max-height: 200px;
+}
+
+.blog-header-image{
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: 150px; 
+}
+
+.blog-posts{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 /* FOOTER */
 
 .footer {

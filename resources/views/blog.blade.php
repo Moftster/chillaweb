@@ -8,25 +8,49 @@
 
 @section('content')
 
-<h1>Blog</h1>
-<div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="container">
+            <h2 class="display-4">The ChillaWeb Blog</h2>
+            <p class="lead">Thoughts, opinion, advice and guidance on all things web design and development.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="{{ asset('icons/Chillalogo4.png') }}" class="img-responsive blog-header-image" alt="ChillaWeb logo">
+        </div>
+    </div>
+    </div>
 
+    <div class="container">
+    <div class="row">
         @foreach($data as $post)
 
-            <img style="max-height: 200px;" src="/uploads/{{ $post->postimage }}" alt="">
+        <br>
         
-            <h1>{{ $post->postname }}</h1>
+        <div class="blog-posts col-lg-4">
 
-            <p>{{ $post->created_at->format('d M Y') }}</p>
+        <h2 class="text-center">{{ $post->postname }}</h2>
 
-            <p>{{ substr($post->postcontent, 0, 150) }}...</p>
+        <div class="img-center">
 
-            <a href='{{url("/view/{$post->id}")}}' class="btn btn-success">Read post</a>     
+        <img class="blog-post-img" style="" src="/uploads/{{ $post->postimage }}" alt="">
 
-            <br>
+        </div>
+    
+        <p>{{ $post->created_at->format('d M Y') }}</p>
 
-            @endforeach
+        <p>{{ substr($post->postcontent, 0, 150) }}...</p>
 
+        <p class="text-center"><a href='{{url("/view/{$post->id}")}}' class="btn btn-primary">Read post</a></p>
+        
+        </div>
+
+        <br>
+
+        @endforeach
+
+    </div>
 </div>
 
 @endsection
