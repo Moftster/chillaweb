@@ -11061,3 +11061,13 @@ label img {
   margin: 1em;
 }
 
+/* Cookie consent */
+.js-cookie-consent{
+  position: fixed;
+  bottom: 0px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  z-index:9999;
+  background-color: cadetblue;
+}

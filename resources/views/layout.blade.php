@@ -168,6 +168,8 @@
   </footer>
 </div>
 
+<div class="row">@include('cookieConsent::index')</div>
+
 @yield('jsfile')
 
 </body>
