@@ -10,7 +10,6 @@
     <title>ChillaWeb - @yield('title')</title>
 
     <!-- Scripts -->
-
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
