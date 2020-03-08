@@ -18,7 +18,7 @@
 
     <p>{{ $post->created_at->format('d M Y') }}</p>
 
-    <p>{{ nl2br(e($post->postcontent)) }}</p>
+    {{!! nl2br(e($post->postcontent)) !!}}
 
 <br>
 

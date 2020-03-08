@@ -11007,6 +11007,17 @@ label img {
   /* padding: 1em; */
 }
 
+.homepage-icon {
+  padding-top: 0.5em;
+  padding-bottom: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  /* padding: 2.5em; */
+  width: 100%;
+  /* height: 300px; */
+  object-fit: contain;
+}
+
 /* BLOG */
 
 .blog-post-img{

@@ -15,7 +15,7 @@
             <h4 class="display-4">Custom websites from £299</h4>
             <hr class="my-4">
             <p class="lead">Quality design | Advanced development | UK studio</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Pricing</a>
+            <a class="btn btn-primary btn-lg" href="/quote" role="button">Pricing</a>
             <a class="btn btn-outline-primary btn-lg" href="/portfolio" role="button">Portfolio</a>
             </p>
         </div>
@@ -30,32 +30,28 @@
 
 <div class="row section">
 <div class="row">
-  <div class="col-md-10">
-    <p class="h1 ml-2"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p>
+  <div class="col-md-11">
+    <p class="h1"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p>
   </div>
 </div>
 <br>
 <div class="row">
-  <div class="col-md-7 ml-4">
-    <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients. We want to give you the most value for money with options for level of service including development hosting and security management.</p>
+  <div class="col-md-8">
+    <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients.</p>
+    <br>
+    <p class="h3 text-justify">We want to give you the most value for money with options for fully managed hosting and security.</p>
+    <br>
+    <p class="h3 text-justify">Our goal is to turn your ideas into digital products.</p>
   </div>
   <div class="col-md-4">
-    <p class="h5"><strong>Turn your ideas into reality. </strong></p>
+    <img class="img-responsive homepage-icon" src="{{ asset('icons/file5.png') }}" alt="">
   </div>
 </div>
-
-    <p></p>
-
-    <h5></h5>
-
-    <p></p>
-
-  <div class="col-md-5">
-  </div>
 </div>
 
 <hr class="my-4">
 <br>
+
 
 <div class="row section">
 
