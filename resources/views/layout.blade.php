@@ -139,6 +139,8 @@
             <a href="https://www.instagram.com/chillaweb/"><img class="social-icon" src="{{ asset('icons/insta.png') }}" alt="Instagram logo"></a>
             <a href="https://twitter.com/ChillaWeb"><img class="social-icon" src="{{ asset('icons/twitter.png') }}" alt="Twitter logo"></a>
             <a href="https://www.youtube.com/channel/UCYlZTdMURVPbf60rtldAX7g?view_as=subscriber"><img class="social-icon" src="{{ asset('icons/youtube.png') }}" alt="YouTube logo"></a>
+            <a href="/privacyandcookies"><img class="social-icon" src="{{ asset('icons/privacy.png') }}" alt="Privacy icon"></a>
+
         </div>
 
         <nav class="navbar navbar-expand-md navbar- justify-content-center">
