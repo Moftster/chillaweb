@@ -34,14 +34,14 @@
 <div class="row section">
 <div class="row">
   <div class="col-md-12">
-    <h4 class="display-5">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
+    <h4 class="display-5 ml-4">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
 
     {{-- <p class="dispay-4"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p> --}}
   </div>
 </div>
 <br>
 <div class="row">
-  <div class="ml-2 col-md-8">
+  <div class="ml-5 col-md-7">
     <p class="lead text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices and offering high-value solutions for all our clients.</p>
 
     {{-- <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients.</p> --}}
@@ -51,7 +51,7 @@
     <p class="lead text-justify">Our goal is to help clients maximise the business benefits of digital initiatives by turning their ideas into successful digital products.</p>
   </div>
   <div class="col-md-3">
-    <img class="img-responsive homepage-icon" src="{{ asset('icons/chillalogo4.png') }}" alt="">
+    <img class="img-responsive homepage-icon" src="{{ asset('icons/webdev4.png') }}" alt="">
   </div>
 </div>
 </div>
@@ -86,7 +86,8 @@
 <br>
 
 <div class="text-center">
-<h3 class="display-5">Portfolio</h3>
+  <h3 class="">Portfolio</h3>
+{{-- <h3 class="display-5">Portfolio</h3> --}}
 </div>
 <br>
 <div class="row section">
