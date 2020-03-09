@@ -11,7 +11,7 @@
 <br>
 
 <div class="privacy-content">
-    <h1>Privacy and Cookies</h1>
+    <h1>Privacy and Cookie Policy</h1>
 
     <p><small>Last updated: 9 March 2020</small></p>
     <h3>Summary:</h3>

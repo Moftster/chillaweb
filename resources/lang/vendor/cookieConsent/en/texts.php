@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'message' => 'This website uses cookies to ensure you get the best possible experience. <a href="https://www.cookiesandyou.com/">Learn more</a>.',
+    'message' => 'This website uses cookies to ensure you get the best possible experience. Read our <a href="/privacyandcookies">Privacy and Cookie policy</a>.',
     'agree' => 'Got it!',
 ];
