@@ -11,9 +11,12 @@
 <div class="jumbotron">
     <div class="row">
         <div class="col-md-6">
-            <p class="lead">UK Website Design and Development</p>
+          <p class="h3 text-justify">UK Website Design and Development</p>
+
+            {{-- <p class="lead">UK Website Design and Development</p> --}}
             <h4 class="display-4">Custom websites from £299</h4>
             <hr class="my-4">
+            {{-- <p class="h3 text-justify">Quality design | Advanced development | UK studio</p> --}}
             <p class="lead">Quality design | Advanced development | UK studio</p>
             <a class="btn btn-primary btn-lg" href="/quote" role="button">Pricing</a>
             <a class="btn btn-outline-primary btn-lg" href="/portfolio" role="button">Portfolio</a>
@@ -30,21 +33,25 @@
 
 <div class="row section">
 <div class="row">
-  <div class="col-md-11">
-    <p class="h1"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p>
+  <div class="col-md-12">
+    <h4 class="display-5">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
+
+    {{-- <p class="dispay-4"><strong>Website planing, design and build for individuals, agencies, brands and start-ups.</strong></p> --}}
   </div>
 </div>
 <br>
 <div class="row">
-  <div class="col-md-8">
-    <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients.</p>
+  <div class="ml-2 col-md-8">
+    <p class="lead text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices and offering high-value solutions for all our clients.</p>
+
+    {{-- <p class="h3 text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices offering high-value solutions for all our clients.</p> --}}
     <br>
-    <p class="h3 text-justify">We want to give you the most value for money with options for fully managed hosting and security.</p>
+    <p class="lead text-justify">We aim to provide value for money with options for fully managed services including hosting, maintenance and security.</p>
     <br>
-    <p class="h3 text-justify">Our goal is to turn your ideas into digital products.</p>
+    <p class="lead text-justify">Our goal is to help clients maximise the business benefits of digital initiatives by turning their ideas into successful digital products.</p>
   </div>
-  <div class="col-md-4">
-    <img class="img-responsive homepage-icon" src="{{ asset('icons/file5.png') }}" alt="">
+  <div class="col-md-3">
+    <img class="img-responsive homepage-icon" src="{{ asset('icons/chillalogo4.png') }}" alt="">
   </div>
 </div>
 </div>
@@ -59,37 +66,43 @@
         <img src="{{ asset('img/fullstack-bw.png') }}" class="img-responsive fit-image" alt="Full stack man">
     </div>
     <div class="col-md-7">
-        <h3>What you get with ChillaWeb</h3>
+        <h3 class="">What you get with ChillaWeb</h3>
         <hr class="my-4">
         <p class="h5"><strong>Quick and straightforward process</strong></p>
-        <p>Your new website can be up and running in as little as a few days with our simple, streamlined processes.</p>
+        <p class="lead">Your new website can be up and running in as little as a few days with our simple, streamlined processes.</p>
+
+        {{-- <p>Your new website can be up and running in as little as a few days with our simple, streamlined processes.</p> --}}
         <hr class="my-4">
         <p class="h5"><strong>Focus on your project</strong></p>
-        <p>You will have a single point of contact whose focus will be solely on delivering your project.</p>
+        <p class="lead">You will have a single point of contact whose focus will be solely on delivering your project.</p>
         <hr class="my-4">
         <p class="h5"><strong>Affordable pricing</strong></p>
-        <p>Our packages are designed for individuals, startups and small busineses with prices from £299.</p>
+        <p class="lead">Our packages are designed for individuals, startups and small busineses with prices from £299.</p>
         <hr class="my-4">
     </div>
 </div>
 
-<br>
+<hr class="my-4">
 <br>
 
 <div class="text-center">
-<h3>Portfolio</h3>
+<h3 class="display-5">Portfolio</h3>
 </div>
 <br>
 <div class="row section">
     <div class="col-md-4">
     <div class="card card-home" style="">
-        <a href="http://www.pioneerproperty.uk/" target="_blank" class="text-dark text-center"><div class="card-header">
+        <a href="http://www.pioneerproperty.uk/" target="_blank" class="lead text-dark text-center"><div class="card-header">
             www.pioneerproperty.uk
         </div></a>
         <img class="card-img-top" src="{{ asset('img/pioneer-fnl2.jpg') }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Pioneer Property Management</h5>
-          <p class="card-text">Professional corporate site showcasing letting and property management services.</p>
+          <p class="text-center card-title h5"><strong>Pioneer Property Management</strong></p>
+
+          {{-- <h5 class="card-title">Pioneer Property Management</h5> --}}
+          <p class="lead card-text text-justify">Professional corporate site showcasing letting and property management services.</p>
+
+          {{-- <p class="card-text">Professional corporate site showcasing letting and property management services.</p> --}}
         </div>
 
         <div class="card-body text-center">
@@ -102,12 +115,12 @@
       <div class="card card-home" style="">
         
         <a href="http://lowtono.co/" target="_blank" class="text-dark">
-            <div class="card-header text-center">www.lowtono.co
+            <div class="lead card-header text-center">www.lowtono.co
           </div></a>
         <img class="card-img-top" src="{{ asset('img/lowtono-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Low To No</h5>
-          <p class="card-text">Conetent Managment System and review site for low alcohol and alchohol-free beverages.</p>
+          <h5 class="text-center card-title h5"><strong>Low To No</strong></h5>
+          <p class="card-text lead text-justify">Conetent Managment System and review site for low alcohol and alchohol-free beverages.</p>
         </div>
 
         <div class="card-body text-center">
@@ -117,13 +130,13 @@
     </div>
     <div class="col-md-4 card-home">
       <div class="card" style="">
-        <a href="https://newtodo.today/" target="_blank" class="text-dark text-center"><div class="card-header">
+        <a href="https://newtodo.today/" target="_blank" class="text-dark text-center lead"><div class="card-header">
                 www.newtodo.today
         </div></a>
         <img class="card-img-top" src="{{ asset('img/newtodo-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">New To Do</h5>
-          <p class="card-text">To do list and task management application focussing users on immediate priorities.</p>
+            <h5 class="text-center card-title h5"><strong>New To Do</strong></h5>
+          <p class="card-text lead text-justify">To do list and task management application focussing users on immediate priorities.</p>
         </div>
         <div class="text-center card-body">
           <a href="https://newtodo.today/" class="btn btn-outline-secondary">View project</a>
@@ -145,10 +158,13 @@
 
     <div class="card section text-center">
         <div class="card-body">
-          <h5 class="card-title">Get your project off the ground</h5>
-          <p class="card-text">Click below for a free quote for the cost of turning your idea into reality.</p>
+          <br>
+          <h5 class="text-center h5"><strong>Get your project off the ground</strong></h5>
+          <p class="lead">Click below for a free quote for the cost of turning your idea into reality.</p>
+          {{-- <h5 class="card-title">Get your project off the ground</h5>
+          <p class="card-text">Click below for a free quote for the cost of turning your idea into reality.</p> --}}
           <a href="/quote" class="btn btn-success btn-lg">Get a free quote</a>
-          
+          <br>
         </div>
       </div>
 
