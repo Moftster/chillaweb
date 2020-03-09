@@ -25,6 +25,9 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
+// Privacy and Cookies
+Route::view('/privacyandcookies', '/privacyandcookies');
+
 // Quote page
 Route::get('quote', 'QuoteController@index');
 Route::post('quotesummary', 'QuoteController@submitQuoteDetails');
