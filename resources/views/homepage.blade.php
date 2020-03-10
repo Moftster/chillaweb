@@ -40,8 +40,8 @@
 <br>
 
 
-<div class="row">
-  <div class="ml-5 col-md-7">
+<div class="row home-text">
+  <div class="col-md-7 home-text">
     <p class="lead text-justify"> ChillaWeb specialises in delivering beautiful websites at affordable prices and offering high-value solutions for all our clients.</p>
 
     <br>

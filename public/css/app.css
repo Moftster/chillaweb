@@ -2120,6 +2120,30 @@ pre code {
     margin-bottom: 1em;
     /* padding-top: 50px; */
   }
+
+  .home-text{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    /* margin-right: 4rem; */
+    /* background-color: blue; */
+  }
+
+  .homepage-icon{
+    /* background-color: blue; */
+    margin: 0 !important;
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+    margin-left: 0em;
+    /* padding: 2.5em; */
+    width: 100%;
+    /* height: 300px; */
+    object-fit: contain;
+
+  }
+
+
 }
 
 @media (max-width: 767.98px) {
@@ -11092,4 +11116,11 @@ label img {
   width: 100%;
   z-index:9999;
   background-color: lightgrey;
+}
+
+.home-text{
+  margin-left: 1rem;
+  /* margin-right: 0.1rem; */
+  /* margin-right: 4rem; */
+  /* background-color: blue; */
 }
