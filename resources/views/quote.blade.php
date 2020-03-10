@@ -278,7 +278,7 @@
 
 @endsection
 
-<script src="{{ asset('js/quote.js') }}"><script>
+<script src="{{ asset('js/quote.js') }}"></script>
 
 @section('footer')
     @parent
