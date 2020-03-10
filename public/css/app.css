@@ -2111,6 +2111,12 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+
+  .card{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* padding-top: 50px; */
+  }
 }
 
 @media (max-width: 767.98px) {
