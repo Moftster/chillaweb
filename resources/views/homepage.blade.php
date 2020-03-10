@@ -100,7 +100,7 @@
           <p class="text-center card-title h5"><strong>Pioneer Property Management</strong></p>
 
           {{-- <h5 class="card-title">Pioneer Property Management</h5> --}}
-          <p class="lead card-text text-justify">Professional corporate site showcasing letting and property management services.</p>
+          <p class="lead card-text text-center">Professional corporate site showcasing letting and property management services.</p>
 
           {{-- <p class="card-text">Professional corporate site showcasing letting and property management services.</p> --}}
         </div>
@@ -120,7 +120,7 @@
         <img class="card-img-top" src="{{ asset('img/lowtono-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="text-center card-title h5"><strong>Low To No</strong></h5>
-          <p class="card-text lead text-justify">Conetent Managment System and review site for low alcohol and alchohol-free beverages.</p>
+          <p class="card-text lead text-center">Conetent Managment System and review site for low alcohol and alchohol-free beverages.</p>
         </div>
 
         <div class="card-body text-center">
@@ -136,7 +136,7 @@
         <img class="card-img-top" src="{{ asset('img/newtodo-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
             <h5 class="text-center card-title h5"><strong>New To Do</strong></h5>
-          <p class="card-text lead text-justify">To do list and task management application focussing users on immediate priorities.</p>
+          <p class="card-text lead text-center">To do list and task management application focussing users on immediate priorities.</p>
         </div>
         <div class="text-center card-body">
           <a href="https://newtodo.today/" class="btn btn-outline-secondary">View project</a>
