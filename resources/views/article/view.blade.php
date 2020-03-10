@@ -29,7 +29,7 @@
 
         <!-- Author -->
         <p class="lead">
-          by
+          by {{ $post->user_name }}
         </p>
 
         <hr>

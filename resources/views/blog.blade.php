@@ -38,6 +38,7 @@
 
         </div>
     
+        <p>By {{ $post->user_name }}</p>
         <p>{{ $post->created_at->format('d M Y') }}</p>
 
         <p class="lead">{{ substr($post->postcontent, 0, 150) }}...</p>
