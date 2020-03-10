@@ -21,14 +21,16 @@
     <div class="col-md-6">
     <div class="card card-home" style="">
       <div class="card-header text-center">
-        <a class="text-dark" href="http://lowtono.co/">www.lowtono.co</a>
+        <a class="text-dark lead" href="http://lowtono.co/">www.lowtono.co</a>
         </div>
         <img class="card-img-top" src="{{ asset('img/lowtono-fnl.jpg') }}" alt="Card image cap">
         <div class="card-body">
 
-            <h5 class="card-title text-center">Low To No</h5>
+            {{-- <h5 class="card-title text-center">Low To No</h5> --}}
+            <p class="text-center card-title h5"><strong>Low To No</strong></p>
 
-            <p class="card-text text-center">Low alcohol and alchohol-free beverage review site. Features include:</p>
+
+            <p class="card-text lead">Low alcohol and alchohol-free beverage review site. Features include:</p>
 
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">User registration and login</li>
@@ -47,14 +49,16 @@
 
       <div class="card card-home" style="">
               <div class="card-header text-center">
-                <a class="text-dark" href="http://www.pioneerproperty.uk/">www.pioneerproperty.uk</a>
+                <a class="text-dark lead" href="http://www.pioneerproperty.uk/">www.pioneerproperty.uk</a>
                 </div>
         <img class="card-img-top" src="{{ asset('img/pioneer-fnl2.jpg') }}" alt="Card image cap">
         <div class="card-body">
 
-          <h5 class="card-title text-center">Pioneer Property</h5>
+          {{-- <h5 class="card-title text-center">Pioneer Property</h5> --}}
+          <p class="text-center card-title h5"><strong>Pioneer Property</strong></p>
 
-          <p class="card-text text-center">Letting and property management company brochure site. Features include:</p>
+
+          <p class="card-text lead">Letting and property management company brochure site. Features include:</p>
 
           <ul class="list-group list-group-flush">
               <li class="list-group-item">Integration with Google Maps API</li>
@@ -78,14 +82,16 @@
     <div class="col-md-6">
       <div class="card card-home" style="">
               <div class="card-header text-center">
-                <a class="text-dark" href="https://newtodo.today/">www.newtodo.today</a>
+                <a class="text-dark lead" href="https://newtodo.today/">www.newtodo.today</a>
                 </div>
                 <img class="card-img-top" src="{{ asset('img/newtodo-fnl.jpg') }}" alt="Card image cap">
                 <div class="card-body">
 
-          <h5 class="card-title text-center">New To Do</h5>
+          {{-- <h5 class="card-title text-center">New To Do</h5> --}}
+          <p class="text-center card-title h5"><strong>New To Do</strong></p>
 
-          <p class="card-text text-center">To do list and task managment application. Features include:</p>
+
+          <p class="card-text lead">To do list and task managment application. Features include:</p>
 
           <ul class="list-group list-group-flush">
               <li class="list-group-item">OAuth login with Google API</li>
@@ -104,14 +110,15 @@
   <div class="col-md-6">
     <div class="card card-home" style="">
             <div class="card-header text-center">
-              <a class="text-dark" href="http://politi-bot.com/">www.pioneerproperty.uk</a>
+              <a class="text-dark lead" href="http://politi-bot.com/">www.pioneerproperty.uk</a>
               </div>
               <img class="card-img-top" src="{{ asset('img/politibot-fnl.jpg') }}" alt="Card image cap">
               <div class="card-body">
 
-        <h5 class="card-title text-center">Politi-Bot</h5>
+        <p class="text-center card-title h5"><strong>Politi-Bot</strong></p>
 
-        <p class="card-text text-center">Soundboard application providing stock political responses. Features include:</p>
+
+        <p class="card-text lead">Soundboard application providing stock political responses. Features include:</p>
 
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Audio integration using JavaScript</li>
