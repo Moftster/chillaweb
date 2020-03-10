@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <img src="{{ asset('icons/Chillalogo4.png') }}" class="img-responsive blog-header-image" alt="ChillaWeb logo">
+            <img src="{{ asset('icons/Chillalogo4.png') }}" class="mx-auto d-block img-fluid rounded img-responsive blog-header-image" alt="ChillaWeb logo">
         </div>
     </div>
     </div>
@@ -34,7 +34,7 @@
 
         <div class="img-center">
 
-        <img class="blog-post-img" style="" src="/uploads/{{ $post->postimage }}" alt="">
+        <img class="img-fluid rounded" style="" src="/uploads/{{ $post->postimage }}" alt="">
 
         </div>
     
