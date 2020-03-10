@@ -276,11 +276,9 @@
 
 </form>
 
-
 @endsection
 
 <script src="{{ asset('js/quote.js') }}"><script>
-
 
 @section('footer')
     @parent
