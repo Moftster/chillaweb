@@ -170,7 +170,7 @@
   </footer>
 </div>
 
-<div class="row">@include('cookieConsent::index')</div>
+<div class="">@include('cookieConsent::index')</div>
 
 @yield('jsfile')
 
