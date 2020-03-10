@@ -146,7 +146,7 @@
         <nav class="navbar navbar-expand-md navbar- justify-content-center">
 
             <div class="row">            
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-center">
                     {{-- <li class="nav-item">
                         <a class="nav-link text-secondary" href="/services">Services</a>
                     </li>                         --}}
