@@ -13,7 +13,7 @@
         <div class="col-md-8">
             <div class="container">
             <h2 class="display-4">The ChillaWeb Blog</h2>
-            <p class="lead">Thoughts, opinion, advice and guidance on all things web design and development.</p>
+            <p class="h3 text-justify">Thoughts, opinion, advice and guidance on all things web design and development.</p>
             </div>
         </div>
         <div class="col-md-4">
@@ -40,7 +40,7 @@
     
         <p>{{ $post->created_at->format('d M Y') }}</p>
 
-        <p>{{ substr($post->postcontent, 0, 150) }}...</p>
+        <p class="lead">{{ substr($post->postcontent, 0, 150) }}...</p>
 
         <p class="text-center"><a href='{{url("/view/{$post->id}")}}' class="btn btn-primary">Read post</a></p>
         

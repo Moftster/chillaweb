@@ -11083,6 +11083,10 @@ label img {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+/* 
+.blog-text p:first-of-type{
+  background-color: blue;
+} */
 
 /* FOOTER */
 

@@ -45,9 +45,7 @@
         <hr>
 
         <!-- Post Content -->
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-
-        <p> {{!! nl2br(e($post->postcontent)) !!}}</p>
+        <p class="lead blog-text"> {{!! nl2br(e($post->postcontent)) !!}}</p>
 
 @endforeach
 
