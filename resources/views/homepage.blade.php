@@ -14,7 +14,7 @@
           <p class="h3 text-justify">UK Website Design and Development</p>
 
             {{-- <p class="lead">UK Website Design and Development</p> --}}
-            <h4 class="display-4">Custom websites from £299</h4>
+            <h4 class="display-4 strap-line">Custom websites from £299</h4>
             <hr class="my-4">
             {{-- <p class="h3 text-justify">Quality design | Advanced development | UK studio</p> --}}
             <p class="lead">Quality design | Advanced development | UK studio</p>
@@ -34,7 +34,7 @@
 {{-- <div class="row section"> --}}
  <div class="row">
   <div class="col-md-11">
-    <h4 class="display-5">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
+    <h4 class="display-5 strap-line">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
   </div>
 </div>
 <br>
@@ -50,7 +50,7 @@
     <p class="lead text-justify">Our goal is to help clients maximise the business benefits of digital initiatives by turning their ideas into successful digital products.</p>
   </div>
   <div class="col-md-3">
-    <img class="img-responsive homepage-icon" src="{{ asset('icons/webdev4.png') }}" alt="">
+    <img class="img-responsive homepage-icon" src="{{ asset('img/drawing-man.png') }}" alt="">
   </div>
 </div> 
 {{-- </div> --}}
@@ -65,7 +65,7 @@
         <img src="{{ asset('img/fullstack-bw.png') }}" class="img-responsive fit-image" alt="Full stack man">
     </div>
     <div class="col-md-7">
-        <h3 class="">What you get with ChillaWeb</h3>
+        <h3 class="strap-line">What you get with ChillaWeb</h3>
         <hr class="my-4">
         <p class="h5"><strong>Quick and straightforward process</strong></p>
         <p class="lead">Your new website can be up and running in as little as a few days with our simple, streamlined processes.</p>
@@ -85,7 +85,7 @@
 <br>
 
 <div class="text-center">
-  <h3 class="">Portfolio</h3>
+  <h3 class="strap-line">Portfolio</h3>
 {{-- <h3 class="display-5">Portfolio</h3> --}}
 </div>
 <br>
