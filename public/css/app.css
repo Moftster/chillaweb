@@ -2121,12 +2121,7 @@ pre code {
     /* padding-top: 50px; */
   }
 
-  .home-text{
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-    /* margin-right: 4rem; */
-    /* background-color: blue; */
-  }
+
 
   .homepage-icon{
     /* background-color: blue; */
@@ -11122,9 +11117,3 @@ label img {
   background-color: lightgrey;
 }
 
-.home-text{
-  margin-left: 1rem;
-  /* margin-right: 0.1rem; */
-  /* margin-right: 4rem; */
-  /* background-color: blue; */
-}

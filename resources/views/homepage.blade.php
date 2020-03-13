@@ -34,7 +34,7 @@
 {{-- <div class="row section"> --}}
  <div class="row">
   <div class="col-md-11">
-    <h4 class="display-5 ml-4">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
+    <h4 class="display-5">Website planning, design and build for individuals, agencies, brands and start-ups.</h4>
   </div>
 </div>
 <br>
